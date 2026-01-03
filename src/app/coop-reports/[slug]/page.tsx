@@ -1,26 +1,31 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import MainLayout from "../../../../components/sections/MainLayout";
 import { coopReports } from "../../../constants/coopReports";
 
 interface CoopReportPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
   return coopReports.map((report) => ({ slug: report.slug }));
 }
 
-export function generateMetadata({ params }: CoopReportPageProps): Metadata {
-  const report = coopReports.find((r) => r.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: CoopReportPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const report = coopReports.find((r) => r.slug === slug);
   return {
     title: report ? `${report.title} — Co-op Report` : "Co-op Report",
     description: report?.abstract || "Co-op report details.",
   };
 }
 
-export default function CoopReportDetail({ params }: CoopReportPageProps) {
-  const report = coopReports.find((r) => r.slug === params.slug);
+export default async function CoopReportDetail({ params }: CoopReportPageProps) {
+  const { slug } = await params;
+  const report = coopReports.find((r) => r.slug === slug);
   if (!report) return notFound();
 
   return (
@@ -31,10 +36,13 @@ export default function CoopReportDetail({ params }: CoopReportPageProps) {
         <header className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden relative z-10">
           <div className="relative h-64 w-full bg-gray-100">
             {report.coverImage ? (
-              <img
+              <Image
                 src={report.coverImage}
                 alt={report.title}
-                className="h-full w-full object-cover"
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 1200px, 100vw"
               />
             ) : (
               <div className="h-full w-full flex items-center justify-center text-gray-500">
@@ -140,12 +148,15 @@ export default function CoopReportDetail({ params }: CoopReportPageProps) {
               <p className="text-[color:var(--foreground)] leading-relaxed">
                 {report.employerInfo.about}
               </p>
-              <div className="w-full rounded-xl border border-gray-100 bg-gray-50 overflow-hidden">
+              <div className="relative w-full rounded-xl border border-gray-100 bg-gray-50 overflow-hidden">
                 {report.employerInfo.image?.url ? (
-                  <img
+                  <Image
                     src={report.employerInfo.image.url}
                     alt={report.employerInfo.image.alt}
-                    className="w-full h-full object-cover"
+                    width={800}
+                    height={450}
+                    className="h-full w-full object-cover"
+                    sizes="(min-width: 768px) 560px, 100vw"
                   />
                 ) : (
                   <div className="aspect-video w-full flex items-center justify-center text-gray-500 text-sm">
@@ -195,10 +206,13 @@ export default function CoopReportDetail({ params }: CoopReportPageProps) {
                     style={{ transformStyle: "preserve-3d", perspective: "1200px" }}
                   >
                     {img.url ? (
-                      <img
+                      <Image
                         src={img.url}
                         alt={img.alt}
+                        width={400}
+                        height={256}
                         className="w-full max-w-xs mx-auto h-64 object-contain"
+                        sizes="(min-width: 768px) 360px, 90vw"
                       />
                     ) : (
                       <div className="h-64 w-full flex items-center justify-center text-gray-500 text-sm">
@@ -283,14 +297,17 @@ export default function CoopReportDetail({ params }: CoopReportPageProps) {
                     </p>
                   </div>
                   <div
-                    className="w-full rounded-lg border border-dashed border-indigo-100 bg-indigo-50/40 overflow-hidden transition-transform duration-500 ease-out group-hover:-rotate-x-2 group-hover:rotate-y-2"
+                    className="relative w-full rounded-lg border border-dashed border-indigo-100 bg-indigo-50/40 overflow-hidden transition-transform duration-500 ease-out group-hover:-rotate-x-2 group-hover:rotate-y-2"
                     style={{ transformStyle: "preserve-3d", perspective: "1200px" }}
                   >
                     {goal.image?.url ? (
-                      <img
+                      <Image
                         src={goal.image.url}
                         alt={goal.image.alt}
+                        width={600}
+                        height={360}
                         className="w-full max-w-xs mx-auto h-60 object-contain"
+                        sizes="(min-width: 768px) 420px, 90vw"
                       />
                     ) : (
                       <div className="h-60 flex items-center justify-center text-xs text-indigo-700">

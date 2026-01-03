@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import Link from "next/link";
 import MainLayout from "../../../components/sections/MainLayout";
@@ -46,10 +47,12 @@ export default function CoopReportsIndex() {
               <div className="relative h-48 w-full bg-gray-100 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent z-10" />
                 {report.coverImage ? (
-                  <img
+                  <Image
                     src={report.coverImage}
                     alt={report.title}
-                    className="h-full w-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 640px, 100vw"
                   />
                 ) : (
                   <div className="h-full w-full flex items-center justify-center text-gray-500">
