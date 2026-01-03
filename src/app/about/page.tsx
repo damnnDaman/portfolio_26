@@ -82,19 +82,19 @@ export default function About() {
                 },
                 {
                   title: "Video Editing",
-                  img: "/about/video-edit.png",
+                  img: "/about/video-edit.webp",
                   desc:
                     "I love crafting tight cuts, smooth transitions, and on-beat audio for pro-grade demos.",
                 },
                 {
                   title: "Volunteering",
-                  img: "/about/volunteering.png",
+                  img: "/about/volunteering.webp",
                   desc:
                     "Giving back through mentorship and events keeps me grounded and connected.",
                 },
                 {
                   title: "Competitions",
-                  img: "/about/competitions.png",
+                  img: "/about/competitions.webp",
                   desc:
                     "Hackathons and coding comps push me to prototype fast and learn faster.",
                 },
