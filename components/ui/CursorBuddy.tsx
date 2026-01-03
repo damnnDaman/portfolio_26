@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
  */
 export default function CursorBuddy() {
   const buddyRef = useRef<HTMLDivElement | null>(null);
-  const frame = useRef<number>();
+  const frame = useRef<number | null>(null);
 
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {

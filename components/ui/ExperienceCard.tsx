@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { Experience } from "../../src/types/experience";
 
@@ -43,13 +44,17 @@ export default function ExperienceCard({
       onMouseLeave={handleMouseLeave}
     >
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/3 flex items-center justify-center bg-white">
-          <img
-            src={experience.image || "/placeholder.svg"}
-            alt={`Image related to ${experience.title} at ${experience.company}`}
-            className={`w-full h-auto max-h-64 md:max-h-72 object-${imageObjectFit} ${imagePadding}`}
-            loading="lazy"
-          />
+        <div className={`md:w-1/3 flex items-center justify-center bg-white ${imagePadding}`}>
+          <div className="relative w-full h-64 md:h-72">
+            <Image
+              src={experience.image || "/placeholder.svg"}
+              alt={`Image related to ${experience.title} at ${experience.company}`}
+              fill
+              className={`object-${imageObjectFit}`}
+              sizes="(min-width: 1024px) 360px, (min-width: 768px) 300px, 100vw"
+              priority={false}
+            />
+          </div>
         </div>
         <div className="md:w-2/3 p-5 space-y-3">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">

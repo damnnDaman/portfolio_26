@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Project } from "@/types/project";
 
 interface ProjectCardProps {
@@ -15,12 +16,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         aria-hidden="true"
       />
 
-      <div className="relative overflow-hidden">
-          <img
-            src={project.image || "/placeholder.svg"}
-            alt={`Screenshot of ${project.title}`}
-          className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+      <div className="relative h-52 w-full overflow-hidden">
+        <Image
+          src={project.image || "/placeholder.svg"}
+          alt={`Screenshot of ${project.title}`}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(min-width: 1024px) 560px, 100vw"
+          priority={false}
+        />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/35 via-slate-900/10 to-transparent" />
       </div>
 
