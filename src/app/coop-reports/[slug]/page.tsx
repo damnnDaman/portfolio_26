@@ -28,6 +28,11 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
   const report = coopReports.find((r) => r.slug === slug);
   if (!report) return notFound();
 
+  const combinedHighlights = [
+    ...(report.highlights || []),
+    ...((report.goalDetails || []).map((g) => g.conclusion).filter(Boolean) as string[]),
+  ];
+
   return (
     <MainLayout>
       <article className="relative space-y-10 overflow-hidden">
@@ -67,7 +72,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                 {report.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 text-xs rounded-full bg-indigo-50 text-indigo-800 border border-indigo-100"
+                    className="px-3 py-1 text-xs rounded-full bg-amber-50 text-amber-800 border border-amber-100"
                   >
                     {skill}
                   </span>
@@ -82,49 +87,30 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
           </div>
         </header>
 
-        {/* 3D accent visuals */}
+        {/* Overview summary */}
         <section className="relative z-10">
-          <div
-            className="rounded-2xl border border-indigo-100/60 bg-gradient-to-br from-indigo-50 via-white to-purple-50 shadow-lg p-6"
-            style={{ perspective: "1200px" }}
-          >
-            <div className="grid gap-4 md:grid-cols-3">
-              {[
-                {
-                  title: "Scope & Impact",
-                  body: report.abstract || "Impact highlights and outcomes.",
-                },
-                {
-                  title: "Role",
-                  body: `${report.role} · ${report.employer}`,
-                },
-                {
-                  title: "Skills",
-                  body:
-                    report.skills?.join(" • ") ||
-                    "Add skills to showcase focus areas.",
-                },
-              ].map((card) => (
-                <div
-                  key={card.title}
-                  className="group relative overflow-hidden rounded-xl bg-white/80 border border-indigo-100 shadow-md transition-transform duration-700 ease-out"
-                  style={{
-                    transformStyle: "preserve-3d",
-                    transform: "rotateX(0deg) rotateY(0deg)",
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/60 via-transparent to-purple-100/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                  <div className="p-5 space-y-2 transform transition-transform duration-700 group-hover:-translate-y-1 group-hover:rotate-x-3 group-hover:rotate-y-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-indigo-700">
-                      {card.title}
-                    </p>
-                    <p className="text-[color:var(--foreground)] text-sm leading-relaxed">
-                      {card.body}
-                    </p>
-                  </div>
-                  <div className="absolute -bottom-10 -right-10 h-24 w-24 rounded-full bg-indigo-200/60 blur-3xl group-hover:translate-y-4 group-hover:-translate-x-4 transition-transform duration-700" />
-                </div>
-              ))}
+          <div className="rounded-2xl border border-amber-100 bg-gradient-to-br from-amber-50 via-white to-orange-50 shadow-md p-6 space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-amber-700">
+              Overview
+            </p>
+            <div className="space-y-2 text-[color:var(--foreground)] leading-relaxed">
+              {report.abstract && (
+                <p>
+                  <span className="font-semibold text-[color:var(--heading)]">Scope & Impact:</span>{" "}
+                  {report.abstract}
+                </p>
+              )}
+              <p>
+                <span className="font-semibold text-[color:var(--heading)]">Role:</span>{" "}
+                {report.role} · {report.employer}
+                {report.location ? ` · ${report.location}` : ""}
+              </p>
+              {report.skills && report.skills.length > 0 && (
+                <p>
+                  <span className="font-semibold text-[color:var(--heading)]">Skills:</span>{" "}
+                  {report.skills.join(" • ")}
+                </p>
+              )}
             </div>
           </div>
         </section>
@@ -187,13 +173,12 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                  Visuals
+                  Gallery
                 </p>
                 <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
-                  Supporting images
+                  Highlights in pictures
                 </h2>
               </div>
-              <span className="text-sm text-gray-500">Add links from /public.</span>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
               {report.images.map((img) => (
@@ -219,7 +204,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                         Add image: {img.alt}
                       </div>
                     )}
-                    <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-br from-indigo-100/40 via-transparent to-purple-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-br from-amber-100/40 via-transparent to-orange-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                   <figcaption className="p-3 text-sm text-[color:var(--foreground)]">
                     {img.alt}
@@ -227,29 +212,6 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                 </figure>
               ))}
             </div>
-          </section>
-        )}
-
-        {report.goals && report.goals.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-4 relative z-10">
-            <div className="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                  Goals
-                </p>
-                <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
-                  What I set out to achieve
-                </h2>
-              </div>
-              <span className="text-sm text-gray-500">
-                Actionable, measurable outcomes.
-              </span>
-            </div>
-            <ul className="grid md:grid-cols-2 gap-3 list-disc list-inside text-[color:var(--foreground)]">
-              {report.goals.map((goal) => (
-                <li key={goal}>{goal}</li>
-              ))}
-            </ul>
           </section>
         )}
 
@@ -261,46 +223,42 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                   Goal deep dives
                 </p>
                 <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
-                  Goal → reflection → conclusion
+                  Action, success, reflection, conclusion
                 </h2>
               </div>
               <span className="text-sm text-gray-500">
                 Five structured goals with optional visuals.
               </span>
             </div>
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="space-y-8">
               {report.goalDetails.map((goal, idx) => (
-                <div
-                  key={goal.title}
-                  className="group border border-gray-100 rounded-xl p-5 bg-gradient-to-br from-indigo-50/60 to-white space-y-3 transition-transform duration-500 ease-out hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="flex items-center justify-between">
+                <div key={goal.title} className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-100 rounded-full px-2.5 py-1">
+                      {idx + 1}
+                    </span>
                     <h3 className="text-lg font-semibold text-[color:var(--heading)]">
                       {goal.title}
                     </h3>
-                    <span className="text-xs font-semibold text-indigo-700 bg-indigo-50 border border-indigo-100 rounded-full px-2.5 py-1">
-                      {idx + 1}/5
-                    </span>
                   </div>
-                  <div className="space-y-2 text-[color:var(--foreground)] text-sm leading-relaxed">
-                    <p>
-                      <span className="font-semibold text-[color:var(--heading)]">
-                        Reflection:
-                      </span>{" "}
-                      {goal.reflection}
-                    </p>
-                    <p>
-                      <span className="font-semibold text-[color:var(--heading)]">
-                        Conclusion:
-                      </span>{" "}
-                      {goal.conclusion}
-                    </p>
+                  <div className="space-y-3 text-[color:var(--foreground)] text-sm leading-relaxed">
+                    {goal.actionPlan && (
+                      <>
+                        <p className="font-semibold text-[color:var(--heading)]">Action Plan</p>
+                        <p>{goal.actionPlan}</p>
+                      </>
+                    )}
+                    {goal.measureOfSuccess && (
+                      <>
+                        <p className="font-semibold text-[color:var(--heading)]">Measure of Success</p>
+                        <p>{goal.measureOfSuccess}</p>
+                      </>
+                    )}
+                    <p className="font-semibold text-[color:var(--heading)]">Reflection</p>
+                    <p>{goal.reflection}</p>
                   </div>
-                  <div
-                    className="relative w-full rounded-lg border border-dashed border-indigo-100 bg-indigo-50/40 overflow-hidden transition-transform duration-500 ease-out group-hover:-rotate-x-2 group-hover:rotate-y-2"
-                    style={{ transformStyle: "preserve-3d", perspective: "1200px" }}
-                  >
-                    {goal.image?.url ? (
+                  {goal.image?.url && (
+                    <div className="relative w-full rounded-lg border border-dashed border-amber-100 bg-amber-50/40 overflow-hidden">
                       <Image
                         src={goal.image.url}
                         alt={goal.image.alt}
@@ -309,28 +267,23 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                         className="w-full max-w-xs mx-auto h-60 object-contain"
                         sizes="(min-width: 768px) 420px, 90vw"
                       />
-                    ) : (
-                      <div className="h-60 flex items-center justify-center text-xs text-indigo-700">
-                        Optional image: {goal.image?.alt || "Add visual"}
-                      </div>
-                    )}
-                    <div className="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-br from-indigo-100/40 via-transparent to-purple-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
           </section>
         )}
 
-        {report.highlights && report.highlights.length > 0 && (
+        {combinedHighlights.length > 0 && (
           <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-4 relative z-10">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-                  Impact Highlights
+                  Impact highlights & conclusions
                 </p>
                 <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
-                  What I built and shipped
+                  What I built, shipped, and concluded
                 </h2>
               </div>
               <span className="text-sm text-gray-500">
@@ -338,10 +291,10 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
               </span>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              {report.highlights.map((item) => (
+              {combinedHighlights.map((item) => (
                 <div
                   key={item}
-                    className="border border-gray-100 rounded-xl p-4 bg-indigo-50/40 text-[color:var(--foreground)]"
+                    className="border border-gray-100 rounded-xl p-4 bg-amber-50/40 text-[color:var(--foreground)]"
                 >
                   {item}
                 </div>

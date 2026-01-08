@@ -1,7 +1,22 @@
+"use client";
 import MainLayout from "../../../components/sections/MainLayout";
 import Image from "next/image";
+import { useEffect, useMemo, useState } from "react";
+
+const heroImages = ["/about/me.jpeg", "/about/me2.png", "/about/me3.png", "/about/me4.png"];
 
 export default function About() {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const images = useMemo(() => heroImages, []);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const timer = setInterval(() => {
+      setSlideIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [images]);
+
   return (
     <MainLayout>
       <div className="">
@@ -27,17 +42,7 @@ export default function About() {
                   and better understand how technology is applied beyond the
                   classroom.
                 </p>
-                <p>
-                  Beyond my coursework, I’ve worked as a <strong>Teaching Assistant</strong> for
-                  several Computer Science courses at the University of Guelph.
-                  In this role, I mentored <strong>500+ students</strong>, graded assignments,
-                  led weekly labs with <strong>40+ students</strong>, delivered tutorials on
-                  various software tools, assisted with debugging, and held
-                  weekly office hours to clarify concepts after lectures. I also
-                  built an <strong>auto-graded tool</strong> to improve manual grading efficiency,
-                  saving significant time for the teaching staff and improving
-                  overall workflow.
-                </p>
+               
                 <p>
                   Outside of academics, I enjoy playing <strong>badminton</strong> and <strong>cricket</strong>,
                   and during the summer you’ll often find me <strong>cycling</strong> around my
@@ -48,14 +53,20 @@ export default function About() {
                   free to reach out if you’d like to connect or collaborate!
                 </p>
               </div>
-              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg min-h-[320px] transform-gpu transition-transform duration-500 hover:rotate-2 hover:scale-[1.02]">
-                <Image
-                  src="/about/me.jpeg"
-                  alt="Daman's journey in tech"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                />
+              <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg min-h-[320px]">
+                {images.map((src, idx) => (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt="Daman gallery"
+                    fill
+                    priority={idx === 0}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className={`object-cover transition-opacity duration-700 ease-in-out ${
+                      idx === slideIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                ))}
               </div>
             </div>
           </section>
@@ -68,6 +79,18 @@ export default function About() {
             <div className="blob blob--yellow -top-16 left-[-100px]" aria-hidden="true" />
             <div className="grid md:grid-cols-3 gap-8 relative z-10">
               {[
+                 {
+                  title: "Competitions",
+                  img: "/about/volunteering.webp",
+                  desc:
+                    "Hackathons and coding comps push me to prototype fast and learn faster.",
+                },
+                {
+                  title: "Volunteering",
+                  img: "/about/competitions.webp",
+                  desc:
+                    "Giving back through mentorship and events keeps me grounded and connected.",
+                },
                 {
                   title: "Badminton",
                   img: "/about/badminton.jpeg",
@@ -86,18 +109,8 @@ export default function About() {
                   desc:
                     "I love crafting tight cuts, smooth transitions, and on-beat audio for pro-grade demos.",
                 },
-                {
-                  title: "Volunteering",
-                  img: "/about/volunteering.webp",
-                  desc:
-                    "Giving back through mentorship and events keeps me grounded and connected.",
-                },
-                {
-                  title: "Competitions",
-                  img: "/about/competitions.webp",
-                  desc:
-                    "Hackathons and coding comps push me to prototype fast and learn faster.",
-                },
+              
+               
                 {
                   title: "South Indian Food",
                   img: "/about/south-indian.jpeg",
