@@ -67,7 +67,9 @@ export default function ExperienceCard({
         )}
 
         <div className="mt-auto flex items-center justify-end border-t border-[#F5F5F5] pt-5 mt-5">
-          {experience.category !== "extracurricular" && experience.category !== "achievement" && (
+          {experience.category !== "extracurricular" &&
+            experience.category !== "achievement" &&
+            experience.showCoopReportsLink !== false && (
             <a
               href="/coop-reports"
               className="text-[14px] font-semibold text-[#1A1A1A] transition-colors duration-200 hover:underline"

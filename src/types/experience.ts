@@ -6,5 +6,6 @@ export interface Experience {
   image?: string;
   skills?: string[];
   category?: "extracurricular" | "achievement";
+  showCoopReportsLink?: boolean;
 }
 

@@ -4,10 +4,10 @@ export const extracurricularExperiences: Experience[] = [
   {
     title: "People’s Choice Award — OPS Hackathon x Microsoft",
     duration: "2025",
-    company: "OPS Hackathon",
+    company: "Ontario Public service",
     description:
       "Won with highest votes among 50+ teams. Built a real-time Ontario-US trade data platform: StatCan API ingestion, Delta Lake ETL, KPI generation, and GNN forecasting for trade risk.",
-    image: "/experience/OPS-hack.jpeg",
+    image: "/home/hack-win.png",
     category: "achievement",
     skills: ["Microsoft Fabric", "Power BI", "Delta Lake", "APIs", "GNN", "ETL"],
   },
@@ -22,6 +22,16 @@ export const extracurricularExperiences: Experience[] = [
     skills: ["React Native", "ML", "Real-time", "TTS", "Computer Vision"],
   },
   {
+    title: "Certificates",
+    duration: "Ongoing",
+    company: "Self-paced",
+    description:
+      "Completed certifications: Figma for UX Design, DevOps, AI and ML algorithms, and more.",
+    image: "/experience/certificate.jpeg",
+    category: "achievement",
+    skills: ["UX Design", "DevOps", "AI/ML"],
+  },
+  {
     title: "Entrance Scholarship",
     duration: "2022",
     company: "University of Guelph",
@@ -33,7 +43,7 @@ export const extracurricularExperiences: Experience[] = [
   },
   {
     title: "Highest Distinction — Computer Science",
-    duration: "2022",
+    duration: "2023",
     company: "High School",
     description:
       "Graduated top of cohort in Computer Science, demonstrating mastery of programming fundamentals and theory.",
@@ -41,15 +51,6 @@ export const extracurricularExperiences: Experience[] = [
     category: "achievement",
     skills: ["Computer Science", "Academics"],
   },
-  {
-    title: "Certificates",
-    duration: "Ongoing",
-    company: "Self-paced",
-    description:
-      "Completed certifications: Figma for UX Design, DevOps, AI and ML algorithms, and more.",
-    image: "/experience/certificate.jpeg",
-    category: "achievement",
-    skills: ["UX Design", "DevOps", "AI/ML"],
-  },
+ 
 ];
 

@@ -12,22 +12,22 @@ export const projects: Project[] = [
     isInProgress: true,
   },
   {
-    tags: ["Design System", "Ontario", "Figma", "Gov UX", "Co-op"],
+    tags: ["Design System", "Wireframes", "Figma", "Ontario Government centered design", "Co-op"],
     title: "Ontario Job Board",
     description:
       "Figma prototype for a job application platform built during my co-op using the Ontario government design kit—centered on accessibility and provincial UX guidelines.",
-    image: "/projects/project.png",
+    image: "/co-op/figma.png",
     moreInfoLink: "",
-    githubLink: "",
+    githubLink: "www.google.com",
   },
   {
-    tags: ["Featured", "Hackathon Winner", "OPSX Microsoft 2025", "Python", "Azure", "Automation"],
+    tags: [ "Hackathon Winner", "OPS X Microsoft 2025", "Python", "Fabric", "Automation", "Delta Lake", "APIs", "Power BI", "ETL"],
     title: "TradePulse",
     description:
-      "Automated system analyzing trade flows between the US and Ontario; won People’s Choice at OPSX Microsoft Hackathon 2025 by surfacing anomalies and insights in near real time.",
-    image: "/projects/project.png",
+      "Automated system analyzing trade flows between the US and Ontario; won People’s Choice by over 10% of the votes among 50+ teams at OPS X Microsoft Hackathon 2025 by surfacing anomalies and insights in near real time.",
+    image: "/projects/dashboard.png",
     moreInfoLink: "",
-    githubLink: "",
+    githubLink: "https://github.com/damnnDaman/Bitbenders_OPS_HACKATHON_2025",
   },
   {
     tags: ["React", "Python", "Flask", "Gemini", "Batching", "Caching"],
@@ -98,9 +98,9 @@ export const projects: Project[] = [
     title: "TryNotToLaugh",
     description:
       "CS-humor joke generator that fetches programming jokes via API—quick laughs with a developer twist.",
-    image: "/projects/project.png",
-    moreInfoLink: "",
-    githubLink: "",
+    image: "/projects/jokes.png",
+    moreInfoLink: "https://trytolaugh.netlify.app/",
+    githubLink: "https://trytolaugh.netlify.app/",
   },
 ];
 
