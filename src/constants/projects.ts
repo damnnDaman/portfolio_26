@@ -2,6 +2,34 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    tags: ["In Progress", "AI", "Resume", "Optimization"],
+    title: "Resume Optimizer",
+    description:
+      "AI-powered resume optimization platform—currently in development.",
+    image: "/projects/project.png",
+    moreInfoLink: "",
+    githubLink: "",
+    isInProgress: true,
+  },
+  {
+    tags: ["Design System", "Ontario", "Figma", "Gov UX", "Co-op"],
+    title: "Ontario Job Board",
+    description:
+      "Figma prototype for a job application platform built during my co-op using the Ontario government design kit—centered on accessibility and provincial UX guidelines.",
+    image: "/projects/project.png",
+    moreInfoLink: "",
+    githubLink: "",
+  },
+  {
+    tags: ["Featured", "Hackathon Winner", "OPSX Microsoft 2025", "Python", "Azure", "Automation"],
+    title: "TradePulse",
+    description:
+      "Automated system analyzing trade flows between the US and Ontario; won People’s Choice at OPSX Microsoft Hackathon 2025 by surfacing anomalies and insights in near real time.",
+    image: "/projects/project.png",
+    moreInfoLink: "",
+    githubLink: "",
+  },
+  {
     tags: ["React", "Python", "Flask", "Gemini", "Batching", "Caching"],
     title: "Code Comprehension",
     description:
@@ -30,6 +58,15 @@ export const projects: Project[] = [
     githubLink: "https://github.com/damnnDaman/CanadianJobs_DataAnalysis",
   },
   {
+    tags: ["Autograder", "Unity Test Framework", "C#", "Education"],
+    title: "Autograder",
+    description:
+      "Automated grading suite for a CIS course at the University of Guelph using Unity Test Framework; cut manual grading time by ~70% for prof and TAs.",
+    image: "/projects/project.png",
+    moreInfoLink: "",
+    githubLink: "",
+  },
+  {
     tags: ["Java", "Swing", "OOP", "Exception Handling"],
     title: "Wealth EPortfolio",
     description:
@@ -55,6 +92,15 @@ export const projects: Project[] = [
     image: "/projects/project.png",
     moreInfoLink: "",
     githubLink: "https://github.com/damnnDaman/Contactsbook-with-UI-",
+  },
+  {
+    tags: ["API", "Humor", "Generator", "Frontend"],
+    title: "TryNotToLaugh",
+    description:
+      "CS-humor joke generator that fetches programming jokes via API—quick laughs with a developer twist.",
+    image: "/projects/project.png",
+    moreInfoLink: "",
+    githubLink: "",
   },
 ];
 

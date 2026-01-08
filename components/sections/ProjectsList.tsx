@@ -7,10 +7,13 @@ interface ProjectsListProps {
 
 export default function ProjectsList({ projects }: ProjectsListProps) {
   return (
-    <section>
-      <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <section
+      className="px-5 sm:px-10"
+      style={{ paddingTop: 0, paddingBottom: 80 }}
+    >
+      <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={index} project={project} index={index} />
         ))}
       </div>
     </section>

@@ -15,15 +15,18 @@ const dancing = Dancing_Script({
 export default function Home() {
   const [links] = useState<SocialLink[]>(socialLinks);
   const heroImages = useMemo(
-    () => ["/home/me3.png", "/about/me2.png", "/about/me3.png", "/about/me4.png"],
+    () => ["/about/me3.png", "/about/me4.png", "/co-op/party.jpeg", "/home/hack-win.png", "/home/meet.png"],
     []
   );
   const heroCaptions = useMemo(
     () => [
-      "At Tech Conference",
+      "Excited to learn new things",
+      "Love to get photos",
+      "Celebrating with the Team",
       "Hackathon Win",
-      "Team Demo Day",
-      "Campus Project Build",
+      "At the Office",
+      
+      
     ],
     []
   );
@@ -77,7 +80,7 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start mt-3">
             <a
-              href="/projects"
+              href="/experience"
               className="mt-3 inline-flex items-center gap-3 rounded-[8px] px-10 py-4 text-[16px] font-semibold text-white transition-all duration-200 bounce-in bg-[#1A1A1A] shadow-[0_4px_16px_rgba(0,0,0,0.15),0_6px_24px_-10px_rgba(15,47,107,0.35)] hover:bg-[#2A2A2A] hover:-translate-y-[2px] hover:shadow-[0_6px_20px_rgba(0,0,0,0.2),0_10px_30px_-12px_rgba(15,47,107,0.45)]"
               style={{ animationDelay: "1100ms" }}
             >
@@ -174,7 +177,7 @@ export default function Home() {
       <div className="mt-10 grid gap-4 sm:gap-5 md:gap-6 grid-cols-1 sm:grid-cols-3">
         {[
           { value: "10+", label: "Projects" },
-          { value: "3", label: "Years Experience" },
+          { value: "1", label: "Years Experience" },
           { value: "2", label: "Co-op Terms" },
         ].map((stat) => (
           <div

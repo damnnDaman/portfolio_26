@@ -5,5 +5,6 @@ export interface Project {
   image: string;
   moreInfoLink?: string;
   githubLink?: string;
+  isInProgress?: boolean;
 }
 

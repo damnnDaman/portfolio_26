@@ -16,7 +16,7 @@ export const socialLinks: SocialLink[] = [
   {
     text: "Instagram",
     icon: "/icons/instagram.svg",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/daman.kr",
     ariaLabel: "Visit Daman's Instagram profile",
   },
   {
@@ -24,7 +24,7 @@ export const socialLinks: SocialLink[] = [
     icon: "/icons/email.svg",
     onClick: () => {
       navigator.clipboard
-        .writeText("dkumar07@uoguelph.ca")
+        .writeText("dmkumar2507@gmail.com")
         .then(() => alert("Email copied to clipboard!"))
         .catch((err) => console.error("Failed to copy: ", err));
     },

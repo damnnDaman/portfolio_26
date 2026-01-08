@@ -19,8 +19,9 @@ export default function WorkExperience({ experiences }: WorkExperienceProps) {
           <ExperienceCard
             key={index}
             experience={experience}
-            imageObjectFit="contain"
-            imagePadding="p-4"
+            imageObjectFit="cover"
+            imagePadding="p-0"
+            index={index}
           />
         ))}
       </div>

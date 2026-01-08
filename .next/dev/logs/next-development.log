@@ -1,26 +1,121 @@
-[00:00:02.106] Server  LOG     ✓ Ready in 1514ms
-[00:00:15.026] Server  LOG     ○ Compiling / ...
-[00:00:21.511] Server  LOG     ✓ Compiled in 352ms
-[00:00:32.865] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:33.062] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:33.257] Browser WARN    Image with src "/home/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:33.257] Browser WARN    Image with src "/about/me2.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:33.258] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:33.258] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:33.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:34.108] Browser WARN    Image with src "/home/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.108] Browser WARN    Image with src "/about/me2.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.108] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.108] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:34.846] Browser WARN    Image with src "/home/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.846] Browser WARN    Image with src "/about/me2.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.846] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:34.846] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:41.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:41.675] Browser WARN    Image with src "/home/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:41.675] Browser WARN    Image with src "/about/me2.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:41.675] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:41.675] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:01.934] Browser WARN    Image with src "/about/me3.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:01.482] Server  LOG     ✓ Ready in 1256ms
+[00:00:04.494] Server  LOG     ○ Compiling / ...
+[00:00:06.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.509] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:06.880] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.657] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.657] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.657] Browser WARN    Image with src "/co-op/party.jpeg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.657] Browser WARN    Image with src "/home/hack-win.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:07.658] Browser WARN    Image with src "/home/meet.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.015] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.342] Browser WARN    Image with src "/about/me3.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.342] Browser WARN    Image with src "/about/me4.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.342] Browser WARN    Image with src "/co-op/party.jpeg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.342] Browser WARN    Image with src "/home/hack-win.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:08.342] Browser WARN    Image with src "/home/meet.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:12.067] Server  LOG     ✓ Compiled in 957ms
+[00:41:29.264] Server  LOG     ✓ Compiled in 1171ms
+[00:00:14.236] Server  LOG     ✓ Compiled in 123ms
+[00:41:31.308] Server  LOG     ✓ Compiled in 213ms
+[00:00:19.817] Browser WARN    Image with src "/about/badminton.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:19.817] Browser WARN    Image with src "/about/competitions.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:19.817] Browser WARN    Image with src "/about/volunteering.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.492] Browser WARN    Image with src "/about/video-edit.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.492] Browser WARN    Image with src "/about/south-indian.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:21.075] Browser WARN    Image with src "/about/outing.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:47.968] Server  LOG     ✓ Compiled in 579ms
+[00:43:05.248] Server  LOG     ✓ Compiled in 877ms
+[00:02:26.139] Server  LOG     ✓ Compiled in 295ms
+[00:02:27.064] Server  LOG     ✓ Compiled in 71ms
+[00:02:43.288] Server  LOG     ✓ Compiled in 199ms
+[00:03:11.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:12.296] Browser WARN    Image with src "/about/badminton.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:12.296] Browser WARN    Image with src "/about/competitions.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:12.296] Browser WARN    Image with src "/about/volunteering.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:12.296] Browser WARN    Image with src "/about/video-edit.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:12.296] Browser WARN    Image with src "/about/south-indian.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:12.296] Browser WARN    Image with src "/about/outing.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:34.615] Server  LOG     ✓ Compiled in 98ms
+[00:05:35.514] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true n n true n
+[00:05:36.695] Server  LOG     ✓ Compiled in 63ms
+[00:05:37.507] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true net net true net
+[00:05:38.600] Server  LOG     ✓ Compiled in 94ms
+[00:05:40.404] Server  LOG     ✓ Compiled in 88ms
+[00:05:41.504] Browser ERROR   ./src/app/about/page.tsx:283:131
+Parsing ecmascript source code failed
+  281 |           </p>
+  282 |           {/* Hidden static form so Netlify detects this form and captures submissions */}
+> 283 |           <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden aria-hidden="true" netlify-recaptcha="true", >
+      |                                                                                                                                   ^
+  284 |             <input type="hidden" name="form-name" value="contact" />
+  285 |             <input name="bot-field" />
+  286 |             <input name="name" />
+
+Expected '</', got ','
+
+Import traces:
+  Client Component Browser:
+    ./src/app/about/page.tsx [Client Component Browser]
+    ./src/app/about/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/about/page.tsx [Client Component SSR]
+    ./src/app/about/page.tsx [Server Component]
+[00:05:42.678] Server  LOG     ✓ Compiled in 138ms
+[00:05:43.510] Browser ERROR   ./src/app/about/page.tsx:283:131
+Parsing ecmascript source code failed
+  281 |           </p>
+  282 |           {/* Hidden static form so Netlify detects this form and captures submissions */}
+> 283 |           <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden aria-hidden="true" netlify-recaptcha="true", netlify-recaptcha-site-key="6Lf6Hf4oAAAAAFl7491O8L1JhjXAqoLbW6JtF47t">
+      |                                                                                                                                   ^
+  284 |             <input type="hidden" name="form-name" value="contact" />
+  285 |             <input name="bot-field" />
+  286 |             <input name="name" />
+
+Expected '</', got ','
+
+Import traces:
+  Client Component Browser:
+    ./src/app/about/page.tsx [Client Component Browser]
+    ./src/app/about/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/about/page.tsx [Client Component SSR]
+    ./src/app/about/page.tsx [Server Component]
+[00:05:46.333] Server  LOG     ✓ Compiled in 236ms
+[00:05:46.518] Browser ERROR   ./src/app/about/page.tsx:283:131
+Parsing ecmascript source code failed
+  281 |           </p>
+  282 |           {/* Hidden static form so Netlify detects this form and captures submissions */}
+> 283 |           <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden aria-hidden="true" netlify-recaptcha="true", >
+      |                                                                                                                                   ^
+  284 |             <input type="hidden" name="form-name" value="contact" />
+  285 |             <input name="bot-field" />
+  286 |             <input name="name" />
+
+Expected '</', got ','
+
+Import traces:
+  Client Component Browser:
+    ./src/app/about/page.tsx [Client Component Browser]
+    ./src/app/about/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/about/page.tsx [Client Component SSR]
+    ./src/app/about/page.tsx [Server Component]
+[00:06:08.639] Server  LOG     ✓ Compiled in 105ms
+[00:06:09.507] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true netlify netlify true netlify
+[00:06:52.646] Server  LOG     ✓ Compiled in 108ms
+[00:06:55.404] Server  LOG     ✓ Compiled in 70ms
+[00:06:56.696] Server  LOG     ✓ Compiled in 63ms
+[00:07:06.096] Server  LOG     ✓ Compiled in 65ms
+[00:07:58.331] Server  LOG     ✓ Compiled in 77ms
+[00:08:03.938] Server  LOG     ✓ Compiled in 94ms

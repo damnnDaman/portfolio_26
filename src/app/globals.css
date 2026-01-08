@@ -76,6 +76,14 @@ body {
   animation: typing 3s steps(38, end), caret 0.85s step-end infinite;
 }
 
+.text-foreground {
+  color: var(--foreground);
+}
+
+.text-heading {
+  color: var(--heading);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

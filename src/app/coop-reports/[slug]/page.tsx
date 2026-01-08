@@ -34,18 +34,21 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
 
   return (
     <MainLayout>
-      <article className="relative space-y-10 overflow-hidden px-4 sm:px-0">
+      <article
+        className="relative space-y-10 overflow-hidden"
+        style={{ padding: "100px 20px 60px" }}
+      >
         <div className="blob blob--pink -top-24 -left-32" aria-hidden="true" />
         <div className="blob blob--yellow top-24 right-[-120px]" aria-hidden="true" />
         <header className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 hover:ring-amber-100/80 overflow-hidden relative z-10 transition-shadow duration-300">
-          <div className="relative h-64 w-full bg-gray-100">
+          <div className="relative h-[240px] w-full bg-[#F5F5F5] overflow-hidden transition-transform duration-500">
             {report.coverImage ? (
               <Image
                 src={report.coverImage}
                 alt={report.title}
                 fill
                 priority
-                className="object-cover"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(min-width: 1024px) 1200px, 100vw"
               />
             ) : (
@@ -53,35 +56,35 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                 Add /coop/cover-image.jpg
               </div>
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
-            <div className="absolute bottom-6 left-6 space-y-2 text-white">
-              <p className="text-sm font-semibold uppercase tracking-wide">
-                {report.term}
-              </p>
-              <h1 className="text-3xl font-bold">{report.title}</h1>
-              <p className="text-sm text-gray-200">
-                {report.role} · {report.employer}
-                {report.location ? ` · ${report.location}` : ""}
-              </p>
-            </div>
+            <span className="absolute top-4 left-4 rounded-[6px] bg-[#1A1A1A] px-[12px] py-[6px] text-[12px] font-semibold uppercase tracking-[0.4px] text-white">
+              {report.term}
+            </span>
           </div>
           <div className="p-8 space-y-4">
+            <h1
+              className="font-bold text-[52px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] fade-up"
+              style={{ animationDelay: "120ms" }}
+            >
+              {report.title}
+            </h1>
+            <p className="text-sm text-[#4A4A4A]">
+              {report.role} · {report.employer}
+              {report.location ? ` · ${report.location}` : ""}
+            </p>
+            <p className="text-[19px] text-[#4A4A4A] leading-[1.6]">
+              {report.abstract || report.jobDescription}
+            </p>
             {report.skills && report.skills?.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {report.skills.map((skill) => (
+              <div className="flex flex-wrap" style={{ gap: "8px" }}>
+                {report.skills.slice(0, 4).map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 text-xs rounded-full bg-amber-50 text-amber-800 border border-amber-100"
+                    className="inline-flex items-center rounded-[6px] border border-[#E5E5E5] bg-transparent px-[10px] py-[4px] text-[12px] font-medium text-[#4A4A4A]"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-            )}
-            {report.jobDescription && (
-              <p className="text-lg text-[color:var(--foreground)] leading-relaxed">
-                {report.abstract}
-              </p>
             )}
           </div>
         </header>
@@ -92,21 +95,21 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
             <p className="text-xs font-semibold uppercase tracking-wide text-amber-700">
               Overview
             </p>
-            <div className="space-y-2 text-[color:var(--foreground)] leading-relaxed">
+            <div className="space-y-2 text-foreground leading-relaxed">
               {report.abstract && (
                 <p>
-                  <span className="font-semibold text-[color:var(--heading)]">Scope & Impact:</span>{" "}
+                  <span className="font-semibold text-heading">Scope & Impact:</span>{" "}
                   {report.abstract}
                 </p>
               )}
               <p>
-                <span className="font-semibold text-[color:var(--heading)]">Role:</span>{" "}
+                <span className="font-semibold text-heading">Role:</span>{" "}
                 {report.role} · {report.employer}
                 {report.location ? ` · ${report.location}` : ""}
               </p>
               {report.skills && report.skills.length > 0 && (
                 <p>
-                  <span className="font-semibold text-[color:var(--heading)]">Skills:</span>{" "}
+                  <span className="font-semibold text-heading">Skills:</span>{" "}
                   {report.skills.join(" • ")}
                 </p>
               )}
@@ -115,13 +118,13 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         </section>
 
         {report.employerInfo && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-6 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-6 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
                   Employer
                 </p>
-                <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+                <h2 className="text-2xl font-semibold text-heading">
                   What they do
                 </h2>
               </div>
@@ -130,7 +133,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
               </span>
             </div>
             <div className="grid gap-6 md:grid-cols-[2fr,1fr] items-start">
-              <p className="text-[color:var(--foreground)] leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 {report.employerInfo.about}
               </p>
               <div className="relative w-full rounded-xl border border-gray-100 bg-gray-50 overflow-hidden">
@@ -154,27 +157,27 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.jobDescription && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-3 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-3 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
               Role & scope
             </p>
-            <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+            <h2 className="text-2xl font-semibold text-heading">
               Job description
             </h2>
-            <p className="text-[color:var(--foreground)] leading-relaxed">
+            <p className="text-foreground leading-relaxed">
               {report.jobDescription}
             </p>
           </section>
         )}
 
         {report.images && report.images.length > 0 && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
                   Gallery
                 </p>
-                <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+                <h2 className="text-2xl font-semibold text-heading">
                   Highlights in pictures
                 </h2>
               </div>
@@ -205,7 +208,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                     )}
                     <div className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-br from-amber-100/40 via-transparent to-orange-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
-                  <figcaption className="p-3 text-sm text-[color:var(--foreground)]">
+                  <figcaption className="p-3 text-sm text-foreground">
                     {img.alt}
                   </figcaption>
                 </figure>
@@ -215,13 +218,13 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.goalDetails && report.goalDetails.length > 0 && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-6 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-6 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
                   Goal deep dives
                 </p>
-                <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+                <h2 className="text-2xl font-semibold text-heading">
                   Action, success, reflection, conclusion
                 </h2>
               </div>
@@ -236,24 +239,24 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                     <span className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-100 rounded-full px-2.5 py-1">
                       {idx + 1}
                     </span>
-                    <h3 className="text-lg font-semibold text-[color:var(--heading)]">
+                    <h3 className="text-lg font-semibold text-heading">
                       {goal.title}
                     </h3>
                   </div>
-                  <div className="space-y-3 text-[color:var(--foreground)] text-sm leading-relaxed">
+                  <div className="space-y-3 text-foreground text-sm leading-relaxed">
                     {goal.actionPlan && (
                       <>
-                        <p className="font-semibold text-[color:var(--heading)]">Action Plan</p>
+                        <p className="font-semibold text-heading">Action Plan</p>
                         <p>{goal.actionPlan}</p>
                       </>
                     )}
                     {goal.measureOfSuccess && (
                       <>
-                        <p className="font-semibold text-[color:var(--heading)]">Measure of Success</p>
+                        <p className="font-semibold text-heading">Measure of Success</p>
                         <p>{goal.measureOfSuccess}</p>
                       </>
                     )}
-                    <p className="font-semibold text-[color:var(--heading)]">Reflection</p>
+                    <p className="font-semibold text-heading">Reflection</p>
                     <p>{goal.reflection}</p>
                   </div>
                   {goal.image?.url && (
@@ -275,13 +278,13 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {combinedHighlights.length > 0 && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
                   Impact highlights & conclusions
                 </p>
-                <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+                <h2 className="text-2xl font-semibold text-heading">
                   What I built, shipped, and concluded
                 </h2>
               </div>
@@ -293,7 +296,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
               {combinedHighlights.map((item) => (
                 <div
                   key={item}
-                    className="border border-gray-100 rounded-xl p-4 bg-amber-50/40 text-[color:var(--foreground)]"
+                    className="border border-gray-100 rounded-xl p-4 bg-amber-50/40 text-foreground"
                 >
                   {item}
                 </div>
@@ -303,13 +306,13 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.takeaways && report.takeaways.length > 0 && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
                   Reflections
                 </p>
-                <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+                <h2 className="text-2xl font-semibold text-heading">
                   What I learned
                 </h2>
               </div>
@@ -317,7 +320,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                 Specific, honest, concise.
               </span>
             </div>
-            <ul className="space-y-2 list-disc list-inside text-[color:var(--foreground)]">
+            <ul className="space-y-2 list-disc list-inside text-foreground">
               {report.takeaways.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -326,14 +329,14 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.acknowledgments && report.acknowledgments.length > 0 && (
-          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-3 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
+          <section className="bg-white rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.18)] border border-[#E5E5E5] p-8 space-y-3 relative z-10 transition-shadow duration-300 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.28)]">
             <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
               Acknowledgments
             </p>
-            <h2 className="text-2xl font-semibold text-[color:var(--heading)]">
+            <h2 className="text-2xl font-semibold text-heading">
               Thanks and credits
             </h2>
-            <ul className="space-y-1 list-disc list-inside text-[color:var(--foreground)]">
+            <ul className="space-y-1 list-disc list-inside text-foreground">
               {report.acknowledgments.map((item) => (
                 <li key={item}>{item}</li>
               ))}
