@@ -340,18 +340,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
           <section className="fade-up card-3d" style={sectionStyle}>
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <p
-                  style={{
-                    fontSize: "12px",
-                    color: "#8A8A8A",
-                    textTransform: "uppercase",
-                    letterSpacing: "1px",
-                    fontWeight: 600,
-                    marginBottom: "12px",
-                  }}
-                >
-                  Goal deep dives
-                </p>
+             
                 <h2
                   style={{
                     fontSize: "28px",
@@ -360,7 +349,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                     marginBottom: "8px",
                   }}
                 >
-                  Action, success, reflection, conclusion
+                Goal deep dives
                 </h2>
               </div>
               <span style={{ fontSize: "14px", color: "#8A8A8A", fontStyle: "italic" }}>
@@ -399,18 +388,11 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                   <div className="space-y-3" style={{ color: "#4A4A4A", lineHeight: 1.8, fontSize: "16px" }}>
                     {goal.actionPlan && (
                       <>
-                        <p className="font-semibold text-heading">Action Plan</p>
+                        {/* <p className="font-semibold text-heading">Action Plan</p> */}
                         <p>{goal.actionPlan}</p>
                       </>
                     )}
-                    {goal.measureOfSuccess && (
-                      <>
-                        <p className="font-semibold text-heading">Measure of Success</p>
-                        <p>{goal.measureOfSuccess}</p>
-                      </>
-                    )}
-                    <p className="font-semibold text-heading">Reflection</p>
-                    <p>{goal.reflection}</p>
+                  
                   </div>
                   {goal.image?.url && (
                     <div

@@ -22,8 +22,8 @@ export interface CoopReport {
   goalDetails?: {
     title: string;
     actionPlan?: string;
-    measureOfSuccess?: string;
-    reflection: string;
+    // measureOfSuccess?: string;
+    // reflection: string;
     // conclusion: string;
     image?: { alt: string; url: string };
   }[];
