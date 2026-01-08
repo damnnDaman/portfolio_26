@@ -1,21 +1,10 @@
 "use client";
 import MainLayout from "../../../components/sections/MainLayout";
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
 
-const heroImages = ["/about/me.jpeg", "/about/me2.png", "/about/me3.png", "/about/me4.png"];
+const aboutImage = "/about/me.jpeg";
 
 export default function About() {
-  const [slideIndex, setSlideIndex] = useState(0);
-  const images = useMemo(() => heroImages, []);
-
-  useEffect(() => {
-    if (images.length <= 1) return;
-    const timer = setInterval(() => {
-      setSlideIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [images]);
 
   return (
     <MainLayout>
@@ -54,19 +43,14 @@ export default function About() {
                 </p>
               </div>
               <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg min-h-[320px]">
-                {images.map((src, idx) => (
-                  <Image
-                    key={src}
-                    src={src}
-                    alt="Daman gallery"
-                    fill
-                    priority={idx === 0}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className={`object-cover transition-opacity duration-700 ease-in-out ${
-                      idx === slideIndex ? "opacity-100" : "opacity-0"
-                    }`}
-                  />
-                ))}
+                <Image
+                  src={aboutImage}
+                  alt="Daman gallery"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </section>

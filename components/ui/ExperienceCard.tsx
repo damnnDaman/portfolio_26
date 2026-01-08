@@ -35,7 +35,7 @@ export default function ExperienceCard({
 
   return (
     <div
-      className="group bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 w-full transform-gpu transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+      className="group mx-4 sm:mx-0 bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-xl overflow-hidden border border-white/70 ring-1 ring-white/70 shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] w-full transform-gpu transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)] hover:ring-amber-100/80"
       style={{
         perspective: "1000px",
         transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) translateZ(0)`,

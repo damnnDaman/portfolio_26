@@ -10,7 +10,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const hasMoreInfo = Boolean(project.moreInfoLink);
 
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white/80 backdrop-blur shadow-sm transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+    <article className="group relative mx-4 sm:mx-0 flex h-full flex-col overflow-hidden rounded-2xl border border-white/70 bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] ring-1 ring-white/70 transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)] hover:ring-amber-100/80">
       <div
         className="pointer-events-none absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         aria-hidden="true"

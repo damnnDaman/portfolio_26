@@ -34,10 +34,10 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
 
   return (
     <MainLayout>
-      <article className="relative space-y-10 overflow-hidden">
+      <article className="relative space-y-10 overflow-hidden px-4 sm:px-0">
         <div className="blob blob--pink -top-24 -left-32" aria-hidden="true" />
         <div className="blob blob--yellow top-24 right-[-120px]" aria-hidden="true" />
-        <header className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden relative z-10">
+        <header className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 hover:ring-amber-100/80 overflow-hidden relative z-10 transition-shadow duration-300">
           <div className="relative h-64 w-full bg-gray-100">
             {report.coverImage ? (
               <Image
@@ -115,7 +115,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         </section>
 
         {report.employerInfo && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-6 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-6 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
@@ -154,7 +154,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.jobDescription && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-3 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-3 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
               Role & scope
             </p>
@@ -168,7 +168,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.images && report.images.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-4 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
@@ -215,7 +215,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.goalDetails && report.goalDetails.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-6 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-6 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
@@ -275,7 +275,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {combinedHighlights.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-4 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
@@ -303,7 +303,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.takeaways && report.takeaways.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-4 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-4 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
@@ -326,7 +326,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
         )}
 
         {report.acknowledgments && report.acknowledgments.length > 0 && (
-          <section className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-3 relative z-10">
+          <section className="bg-gradient-to-br from-white/98 via-white/94 to-amber-50/70 backdrop-blur rounded-2xl shadow-[0_18px_55px_-26px_rgba(15,23,42,0.36)] border border-white/70 ring-1 ring-white/70 p-8 space-y-3 relative z-10 transition-shadow duration-300 hover:ring-amber-100/80 hover:shadow-[0_22px_68px_-22px_rgba(15,23,42,0.42)]">
             <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
               Acknowledgments
             </p>
