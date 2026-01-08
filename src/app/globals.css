@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff; /* White background */
-  --foreground: #60697B; /* Regular text */
-  --heading: #343E51;    /* Heading text */
+  --background: #fafafa;
+  --foreground: #60697B;
+  --heading: #343E51;
 }
-
-
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-image:
+    linear-gradient(#f0f0f0 1px, transparent 1px),
+    linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: -1px -1px;
 }
 
 .blob {
@@ -25,20 +28,11 @@ body {
   transform: translateZ(0);
 }
 
-.blob--pink {
-  background: radial-gradient(circle at 30% 30%, #fff2b8, #ffe08a 55%, #f9c74f 85%);
-}
-
-.blob--blue {
-  background: radial-gradient(circle at 30% 30%, #fff6c2, #ffe08a 55%, #f8c150 85%);
-}
-
-.blob--yellow {
-  background: radial-gradient(circle at 30% 30%, #ffefad, #f6c453 55%, #f4a226 85%);
-}
-
+.blob--pink,
+.blob--blue,
+.blob--yellow,
 .blob--yellow-light {
-  background: radial-gradient(circle at 30% 30%, #fff9d9, #ffe7a8 55%, #ffd166 85%);
+  background: none;
 }
 
 @keyframes float {
@@ -56,6 +50,97 @@ body {
 /* Subtle shake for nav links on hover */
 .nav-link:hover {
   animation: nav-shake 0.4s ease;
+}
+
+/* Simple fade/slide utilities */
+.fade-in {
+  animation: fadeIn 0.8s ease both;
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease both;
+}
+
+.fade-scale {
+  animation: fadeScale 0.9s ease both;
+}
+
+.bounce-in {
+  animation: bounceIn 0.8s ease-out both;
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(102, 126, 234, 0.8);
+  animation: typing 3s steps(38, end), caret 0.85s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03) translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(102, 126, 234, 0.8);
+  }
 }
 
 @keyframes nav-shake {
