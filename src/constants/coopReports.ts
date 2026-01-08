@@ -15,7 +15,7 @@ export const coopReports: CoopReport[] = [
    
     employerInfo: {
       about:
-        "Digital Branch Solutions (Land & Resources Cluster) modernizes Ontario’s Water Well program: tagging every well in the province, maintaining end-to-end records, and streamlining licensing for technicians, contractors, and managers—built on Salesforce CRM for compliant, reliable public services.",
+        "Digital Solutions Branch (Land & Resources Cluster) modernizes Ontario’s Water Well program: tagging every well in the province, maintaining end-to-end records, and streamlining licensing for technicians, contractors, and managers—built on Salesforce CRM for compliant, reliable public services.",
       image: { alt: "Ontario Government digital services", url: "/experience/ontario.png" },
     },
     jobDescription:
