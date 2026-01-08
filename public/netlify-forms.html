@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Netlify Forms Fallback</title>
+</head>
+<body>
+  <!-- Minimal static form so Netlify can detect the form at build time -->
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    <p class="hidden">
+      <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </p>
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>
