@@ -19,7 +19,7 @@ export async function generateMetadata({
   const report = coopReports.find((r) => r.slug === slug);
   return {
     title: report ? `${report.title} — Co-op Report` : "Co-op Report",
-    description: report?.abstract || "Co-op report details.",
+    description: report?.jobDescription || "Co-op report details.",
   };
 }
 
@@ -28,10 +28,9 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
   const report = coopReports.find((r) => r.slug === slug);
   if (!report) return notFound();
 
-  const combinedHighlights = [
-    ...(report.highlights || []),
-    ...((report.goalDetails || []).map((g) => g.conclusion).filter(Boolean) as string[]),
-  ];
+  const combinedHighlights = [...(report.highlights || [])];
+
+  
 
   return (
     <MainLayout>
@@ -79,7 +78,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                 ))}
               </div>
             )}
-            {report.abstract && (
+            {report.jobDescription && (
               <p className="text-lg text-[color:var(--foreground)] leading-relaxed">
                 {report.abstract}
               </p>

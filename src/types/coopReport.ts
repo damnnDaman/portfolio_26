@@ -6,7 +6,7 @@ export interface CoopReport {
   employer: string;
   location?: string;
   coverImage?: string;
-  // abstract?: string;
+  abstract?: string;
   tags?: string[];
   skills?: string[];
   goals?: string[];
