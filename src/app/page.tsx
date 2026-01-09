@@ -109,7 +109,7 @@ export default function Home() {
                 onClick={link.onClick}
                 ariaLabel={link.ariaLabel}
                 classNameOverride={`fade-up`}
-                styleOverride={{ animationDelay: `${800 + index * 100}ms` }}
+                styleOverride={{ animationDelay: `${500 + index * 100}ms` }}
               />
             ))}
           </div>

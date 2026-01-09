@@ -283,6 +283,7 @@ export default function About() {
           <form
             name="contact"
             data-netlify="true"
+            method="POST"
             netlify-honeypot="bot-field"
             hidden
             aria-hidden="true"
@@ -298,7 +299,7 @@ export default function About() {
             method="POST"
             action="/about?form=success"
             data-netlify="true"
-            netlify-honeypot="bot-field"
+            // netlify-honeypot="bot-field"
             className="space-y-4"
           >
             <input type="hidden" name="form-name" value="contact" />

@@ -12,7 +12,7 @@ export const projects: Project[] = [
     isInProgress: true,
   },
   {
-    tags: ["Design System", "Wireframes", "Figma", "Ontario Government centered design", "Co-op"],
+    tags: ["UI/UX", "Design System", "Wireframes", "Figma", "Ontario Government centered design", "Co-op"],
     title: "Ontario Job Board",
     description:
       "Figma prototype for a job application platform built during my co-op using the Ontario government design kit—centered on accessibility and provincial UX guidelines.",
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     githubLink: "www.google.com",
   },
   {
-    tags: [ "Hackathon Winner", "OPS X Microsoft 2025", "Python", "Fabric", "Automation", "Delta Lake", "APIs", "Power BI", "ETL"],
+    tags: [ "OPS X Microsoft 2025", "Python", "Fabric", "Relational Deep Learning","Automation", "Delta Lake", "APIs", "Power BI", "ETL"],
     title: "TradePulse",
     description:
       "Automated system analyzing trade flows between the US and Ontario; won People’s Choice by over 10% of the votes among 50+ teams at OPS X Microsoft Hackathon 2025 by surfacing anomalies and insights in near real time.",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/damnnDaman/Bitbenders_OPS_HACKATHON_2025",
   },
   {
-    tags: ["React", "Python", "Flask", "Gemini", "Batching", "Caching"],
+    tags: ["AI Tool","React", "Python", "Flask", "Gemini", "Batching", "Caching"],
     title: "Code Comprehension",
     description:
       "Automated multi-language code summarization tool with React, Python, and Gemini; batching + caching boosted real-time analysis throughput 3X and cut manual review time by 40%.",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     githubLink: "https://devpost.com/software/speakeasy-8nxi01",
   },
   {
-    tags: ["Python", "Census Data", "Matplotlib", "Seaborn", "NumPy", "Agile"],
+    tags: ["Data Analysis", "Python", "Census Data", "Matplotlib", "Seaborn", "NumPy", "Agile"],
     title: "Canadian Jobs Data Analysis",
     description:
       "Analyzed Statistics Canada job vacancy data, led Agile stand-ups, and visualized labor trends with Matplotlib/Seaborn to drive data-informed decisions.",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/damnnDaman/CanadianJobs_DataAnalysis",
   },
   {
-    tags: ["Autograder", "Unity Test Framework", "C#", "Education"],
+    tags: ["Testing Automation", "Unity Test Framework", "C#", "Education"],
     title: "Autograder",
     description:
       "Automated grading suite for a CIS course at the University of Guelph using Unity Test Framework; cut manual grading time by ~70% for prof and TAs.",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     tags: ["Java", "Swing", "OOP", "Exception Handling"],
-    title: "Wealth EPortfolio",
+    title: "Stock and Mutual Fund E-Portfolio",
     description:
       "Java GUI for managing stock and mutual fund portfolios—buy/sell, gains, search—with robust OOP design, modularity, and graceful error handling.",
     image: "/projects/wealth.png",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/damnnDaman/Wealth_Eportfolio",
   },
   {
-    tags: ["C#", "Unity", "Testing", "QA Automation", "Legacy Systems"],
+    tags: ["Testing Automation", "C#", "Unity", "Testing", "QA Automation", "Legacy Systems"],
     title: "Multi-Mode Calculator Reliability",
     description:
       "Improved reliability of a legacy Regular/Scientific/Accountant calculator by strengthening error handling and automated tests (Unity Test Framework). Applied boundary, data-flow, and basis testing to cut defects and stabilize complex math/stat ops.",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/damnnDaman/Legacy_Calculator_Project",
   },
   {
-    tags: ["C", "Python", "ctypes", "Asciimatics", "MySQL"],
+    tags: ["CLI", "C", "Python", "ctypes", "Asciimatics", "MySQL"],
     title: "vCard Contact Manager",
     description:
       "Built a vCard (.vcf) manager with a custom C parsing/validation library bridged into Python via ctypes. Added a text-based Asciimatics UI and optional MySQL storage for querying contact metadata.",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/damnnDaman/Contactsbook-with-UI-",
   },
   {
-    tags: ["API", "Humor", "Generator", "Frontend"],
+    tags: ["API", "Humor", "Joke Generator", "Frontend"],
     title: "TryNotToLaugh",
     description:
       "CS-humor joke generator that fetches programming jokes via API—quick laughs with a developer twist.",
