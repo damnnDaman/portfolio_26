@@ -15,7 +15,7 @@ const dancing = Dancing_Script({
 export default function Home() {
   const [links] = useState<SocialLink[]>(socialLinks);
   const heroImages = useMemo(
-    () => ["/about/me3.png", "/about/me4.png", "/co-op/party.jpeg", "/home/hack-win.png", "/home/meet.png"],
+    () => ["/about/me3.png", "/about/me4.png", "/co-op/party.jpeg", "/home/hack-win.png", "/about/south-indian.jpeg"],
     []
   );
   const heroCaptions = useMemo(
@@ -24,9 +24,9 @@ export default function Home() {
       "Love to get photos",
       "Celebrating with the Team",
       "Hackathon Win",
-      "At the Office",
-      
-      
+      "Lost in Food",
+
+
     ],
     []
   );
@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <MainLayout>
       <div
-        className="relative grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-14 py-[60px] px-[30px] sm:px-[40px] md:px-[50px] rounded-[24px] border border-[#E5E5E5] bg-white max-w-7xl w-full mx-auto"
+        className="relative  grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-14 py-[60px] px-[30px] sm:px-[40px] md:px-[50px] rounded-[24px] border border-[#E5E5E5] bg-white max-w-7xl w-full mx-auto"
         style={{ boxShadow: "0 8px 32px rgba(0, 0, 0, 0.06)" }}
       >
         <div className="order-2 md:order-1 flex flex-col gap-5 max-w-3xl text-center md:text-left">
@@ -126,9 +126,8 @@ export default function Home() {
               return (
                 <div
                   key={src}
-                  className={`absolute inset-0 transition-all duration-800 ease-in-out ${
-                    isActive ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
-                  }`}
+                  className={`absolute inset-0 transition-all duration-800 ease-in-out ${isActive ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
+                    }`}
                 >
                   <Image
                     src={src}
@@ -161,11 +160,10 @@ export default function Home() {
                   key={idx}
                   onClick={() => setSlideIndex(idx)}
                   aria-label={`Go to slide ${idx + 1}`}
-                  className={`h-2.5 w-2.5 rounded-full border transition-all duration-200 ${
-                    isActive
-                      ? "bg-black border-transparent scale-110"
-                      : "bg-transparent border-black/40 hover:border-black"
-                  }`}
+                  className={`h-2.5 w-2.5 rounded-full border transition-all duration-200 ${isActive
+                    ? "bg-black border-transparent scale-110"
+                    : "bg-transparent border-black/40 hover:border-black"
+                    }`}
                 />
               );
             })}

@@ -19,9 +19,9 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full flex justify-center px-3 sm:px-4">
+    <header className="w-full flex justify-center">
       <div
-        className="mx-auto mt-3 flex h-[70px] w-full max-w-6xl items-center justify-center rounded-full border border-[#E5E5E5] bg-white px-5 sm:px-8 transition-all duration-250 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_-18px_rgba(0,0,0,0.22)]"
+        className="mx-auto mt-8 flex h-[70px] w-full max-w-6xl items-center justify-center rounded-full border border-[#E5E5E5] bg-white px-5 sm:p-8 transition-all duration-250 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_-18px_rgba(0,0,0,0.22)]"
         style={{
           boxShadow: "0 10px 30px -18px rgba(0, 0, 0, 0.18)",
           backgroundImage:
@@ -35,9 +35,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm sm:text-base transition-colors duration-150 ${
-                  active ? "text-[#1A1A1A] font-semibold" : "text-[#4A4A4A] font-medium"
-                } hover:text-[#1A1A1A] hover:underline hover:underline-offset-4 hover:decoration-[#0F2F6B] focus-visible:outline-none focus-visible:text-[#0F2F6B] focus-visible:underline focus-visible:underline-offset-4 focus-visible:decoration-[#0F2F6B] active:text-[#0F2F6B]`}
+                className={`text-sm sm:text-base transition-colors duration-150 ${active ? "text-[#1A1A1A] font-semibold" : "text-[#4A4A4A] font-medium"
+                  } hover:text-[#1A1A1A] hover:underline hover:underline-offset-4 hover:decoration-[#0F2F6B] focus-visible:outline-none focus-visible:text-[#0F2F6B] focus-visible:underline focus-visible:underline-offset-4 focus-visible:decoration-[#0F2F6B] active:text-[#0F2F6B]`}
               >
                 {link.label}
               </Link>

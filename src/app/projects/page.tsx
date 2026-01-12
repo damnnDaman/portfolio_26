@@ -8,7 +8,7 @@ export default function Projects() {
     <MainLayout showGithubLink={true}>
       <div
         className="relative space-y-14 overflow-hidden"
-        style={{ padding: "100px 40px 60px" }}
+        style={{ padding: "40px 40px 60px" }}
       >
         <div className="blob blob--pink -top-20 -left-24" aria-hidden="true" />
         <div className="blob blob--blue top-16 right-[-120px]" aria-hidden="true" />
@@ -18,7 +18,7 @@ export default function Projects() {
             Projects
           </div>
           <h1
-            className="font-bold text-[52px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] mx-auto fade-up"
+            className="font-bold text-[40px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] mx-auto fade-up"
             style={{ maxWidth: "900px", animationDelay: "120ms" }}
           >
             Real-world builds that stay maintainable and ship fast

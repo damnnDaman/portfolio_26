@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Daman Kumar",
-  description: "A curated collection of my projects and experiences.",
+  description: "Get to know me better",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       data: { bodyClass, geistSansVar: geistSans.variable, geistMonoVar: geistMono.variable },
       timestamp: Date.now(),
     }),
-  }).catch(() => {});
+  }).catch(() => { });
   // #endregion
 
   return (

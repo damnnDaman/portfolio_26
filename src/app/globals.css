@@ -39,9 +39,11 @@ body {
   0% {
     transform: translate3d(0, 0, 0) scale(1);
   }
+
   50% {
     transform: translate3d(12px, -18px, 0) scale(1.05);
   }
+
   100% {
     transform: translate3d(-10px, 16px, 0) scale(0.98);
   }
@@ -89,6 +91,7 @@ body {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -100,6 +103,7 @@ body {
     opacity: 0;
     transform: translateY(16px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -111,6 +115,7 @@ body {
     opacity: 0;
     transform: translateY(12px) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -122,10 +127,12 @@ body {
     opacity: 0;
     transform: scale(0.9) translateY(8px);
   }
+
   60% {
     opacity: 1;
     transform: scale(1.03) translateY(-4px);
   }
+
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -136,16 +143,19 @@ body {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 @keyframes caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: rgba(102, 126, 234, 0.8);
   }
@@ -155,18 +165,23 @@ body {
   0% {
     transform: translateX(0);
   }
+
   20% {
     transform: translateX(-1.5px);
   }
+
   40% {
     transform: translateX(1.5px);
   }
+
   60% {
     transform: translateX(-1px);
   }
+
   80% {
     transform: translateX(1px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -209,4 +224,22 @@ body {
 .goal-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 36px -18px rgba(0, 0, 0, 0.24);
+}
+
+/* Float pulse animation */
+/* Co-op report badge */
+@keyframes float-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+
+.animate-float-pulse {
+  animation: float-pulse 3s ease-in-out infinite;
 }

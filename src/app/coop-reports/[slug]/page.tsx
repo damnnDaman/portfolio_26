@@ -55,14 +55,14 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
     <MainLayout>
       <article
         className="space-y-10 px-5 md:px-10"
-        style={{ paddingTop: "100px", paddingBottom: "60px", backgroundColor: "#FAFAFA" }}
+        style={{ paddingTop: "40px", paddingBottom: "60px", backgroundColor: "#FAFAFA" }}
       >
         <header
           className="max-w-[1000px] w-full mx-auto text-center space-y-4"
           style={{ marginBottom: "32px" }}
         >
           <span
-            className="inline-block uppercase"
+            className="inline-block uppercase animate-float-pulse"
             style={{
               background: "#1A1A1A",
               color: "#FFFFFF",
@@ -76,109 +76,13 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
           >
             {badgeText}
           </span>
-          <div className="flex justify-center">
-            {report.coverImage ? (
-              <Image
-                src={report.coverImage}
-                alt={report.employer}
-                width={140}
-                height={80}
-                style={{ height: "80px", width: "auto", marginBottom: "24px", filter: "grayscale(0)" }}
-              />
-            ) : null}
-          </div>
-          <h1
-            className="font-bold"
-            style={{
-              fontSize: "48px",
-              fontWeight: 700,
-              color: "#1A1A1A",
-              lineHeight: 1.2,
-              marginBottom: "16px",
-            }}
-          >
-            {report.title}
-          </h1>
-        
+
+
+
           {/* Description removed per request */}
         </header>
 
         {/* Quick info card */}
-        <section
-          className="fade-up"
-          style={{
-            background: "#FFFFFF",
-            border: "1px solid #E5E5E5",
-            borderRadius: "16px",
-            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.08)",
-            padding: "32px",
-            maxWidth: "900px",
-            margin: "-40px auto 60px",
-          }}
-        >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="space-y-2">
-              <p
-                style={{
-                  fontSize: "13px",
-                  color: "#8A8A8A",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.5px",
-                  fontWeight: 600,
-                }}
-              >
-                Role
-              </p>
-              <p style={{ fontSize: "16px", color: "#1A1A1A", fontWeight: 500 }}>{report.role}</p>
-            </div>
-            <div className="space-y-2">
-              <p
-                style={{
-                  fontSize: "13px",
-                  color: "#8A8A8A",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.5px",
-                  fontWeight: 600,
-                }}
-              >
-                Skills
-              </p>
-              <div className="flex flex-wrap" style={{ gap: "8px" }}>
-                {(report.skills || []).slice(0, 6).map((skill) => (
-                  <span
-                    key={skill}
-                    style={{
-                      background: "#F5F5F5",
-                      padding: "4px 10px",
-                      borderRadius: "6px",
-                      fontSize: "13px",
-                      color: "#1A1A1A",
-                    }}
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="space-y-2">
-              <p
-                style={{
-                  fontSize: "13px",
-                  color: "#8A8A8A",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.5px",
-                  fontWeight: 600,
-                }}
-              >
-                Duration
-              </p>
-              <p style={{ fontSize: "16px", color: "#1A1A1A", fontWeight: 500 }}>
-                {report.term}
-              </p>
-            </div>
-          </div>
-        </section>
-
         {report.employerInfo && (
           <section className="fade-up card-3d" style={sectionStyle}>
             <div className="flex items-start justify-between gap-4 flex-wrap">
@@ -340,7 +244,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
           <section className="fade-up card-3d" style={sectionStyle}>
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
-             
+
                 <h2
                   style={{
                     fontSize: "28px",
@@ -349,7 +253,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                     marginBottom: "8px",
                   }}
                 >
-                Goal deep dives
+                  Goal deep dives
                 </h2>
               </div>
               <span style={{ fontSize: "14px", color: "#8A8A8A", fontStyle: "italic" }}>
@@ -392,7 +296,7 @@ export default async function CoopReportDetail({ params }: CoopReportPageProps) 
                         <p>{goal.actionPlan}</p>
                       </>
                     )}
-                  
+
                   </div>
                   {goal.image?.url && (
                     <div

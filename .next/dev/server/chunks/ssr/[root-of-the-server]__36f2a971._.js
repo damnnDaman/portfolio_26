@@ -79,7 +79,7 @@ const coopReports = [
             "Product Thinking"
         ],
         employerInfo: {
-            about: "Digital Branch Solutions (Land & Resources Cluster) modernizes Ontario’s Water Well program: tagging every well in the province, maintaining end-to-end records, and streamlining licensing for technicians, contractors, and managers—built on Salesforce CRM for compliant, reliable public services.",
+            about: "Digital Solutions Branch (Land & Resources Cluster) modernizes Ontario’s Water Well program: tagging every well in the province, maintaining end-to-end records, and streamlining licensing for technicians, contractors, and managers—built on Salesforce CRM for compliant, reliable public services.",
             image: {
                 alt: "Ontario Government digital services",
                 url: "/experience/ontario.png"
@@ -111,9 +111,7 @@ const coopReports = [
         goalDetails: [
             {
                 title: "Strengthen Figma and user-centered design",
-                actionPlan: "Worked closely with the UX Lead to strengthen Figma and user-centered design through hands-on learning; built an end-to-end Ontario Job Portal prototype and refined designs weekly with feedback, focusing on accessibility, usability, and consistent patterns.",
-                measureOfSuccess: "Completed a full interactive Figma prototype; incorporated weekly UX Lead feedback; demonstrated improved usability, accessibility, and confidence in design decisions.",
-                reflection: "Worked closely with the UX Lead to build an end-to-end Ontario Job Portal prototype in Figma; iterated weekly using accessibility, usability, and consistent design patterns to align with user-centered principles.",
+                actionPlan: "Worked closely with the UX Lead to strengthen Figma and user-centered design through hands-on learning; built an end-to-end Ontario Job Portal prototype and refined designs weekly with feedback, focusing on accessibility, usability, and consistent patterns. Completed a full interactive Figma prototype; incorporated weekly UX Lead feedback; demonstrated improved usability, accessibility, and confidence in design decisions.",
                 image: {
                     alt: "Figma user-centered design exploration",
                     url: "/co-op/figma.png"
@@ -121,9 +119,7 @@ const coopReports = [
             },
             {
                 title: "Contribute to Water Wells Modernization & grow product sense",
-                actionPlan: "Supported the Water Wells Modernization Project by assisting with wireframes, workflows, and user journeys; learned how Salesforce CRM supports efficient data management; applied communication and teamwork skills with cross-functional teams.",
-                measureOfSuccess: "Contributed wireframes and workflow documentation; gained practical Salesforce CRM knowledge; demonstrated understanding of stakeholder and user needs and applied product thinking.",
-                reflection: "Supported Water Wells Modernization with wireframes, workflows, and user journeys; learned how Salesforce CRM supports technicians/contractors and practiced balancing user needs, system limits, and business goals.",
+                actionPlan: "Supported the Water Wells Modernization Project by assisting with wireframes, workflows, and user journeys; learned how Salesforce CRM supports efficient data management; applied communication and teamwork skills with cross-functional teams. Contributed wireframes and workflow documentation; gained practical Salesforce CRM knowledge; demonstrated understanding of stakeholder and user needs and applied product thinking.",
                 image: {
                     alt: "Water Wells modernization flow",
                     url: "/co-op/salesforce.png"
@@ -131,9 +127,7 @@ const coopReports = [
             },
             {
                 title: "Build patience, resilience, and workplace comfort",
-                actionPlan: "Adapted to Canadian workplace culture by improving professional communication and consistency; attended networking events and volunteered as a GovTech Student Champion hosting events, collaborating with students, and creating videos.",
-                measureOfSuccess: "Increased engagement in workplace and networking events; improved punctuality and consistency; successfully contributed to GovTech initiatives; greater confidence with colleagues and managers.",
-                reflection: "Adapted to Canadian workplace norms through professional communication, punctuality, and consistency; attended networking events and volunteered as a GovTech Student Champion hosting events and creating videos.",
+                actionPlan: "Adapted to Canadian workplace culture by improving professional communication and consistency; attended networking events and volunteered as a GovTech Student Champion hosting events, collaborating with students, and creating videos. Increased engagement in workplace and networking events; improved punctuality and consistency; successfully contributed to GovTech initiatives; greater confidence with colleagues and managers.",
                 image: {
                     alt: "Team collaboration moment",
                     url: "/co-op/sitting-on-chair.jpeg"
@@ -141,9 +135,7 @@ const coopReports = [
             },
             {
                 title: "Improve public speaking and confidence",
-                actionPlan: "Actively participated more during meetings, updates, and daily conversations; used GovTech activities and student engagement events to practice public speaking; focused on improving clarity and confidence.",
-                measureOfSuccess: "Increased verbal participation in meetings; improved confidence sharing ideas and updates; positive feedback from peers and supervisors; reduced hesitation speaking in groups.",
-                reflection: "Actively spoke up in meetings, updates, and GovTech events to practice clarity and confidence; used supportive settings to build comfort communicating with coworkers.",
+                actionPlan: "Actively participated more during meetings, updates, and daily conversations; used GovTech activities and student engagement events to practice public speaking; focused on improving clarity and confidence. Increased verbal participation in meetings; improved confidence sharing ideas and updates; positive feedback from peers and supervisors; reduced hesitation speaking in groups.",
                 image: {
                     alt: "Team presentation snapshot",
                     url: "/co-op/team.jpeg"
@@ -151,9 +143,7 @@ const coopReports = [
             },
             {
                 title: "Understand government operations and project purpose",
-                actionPlan: "Engaged with leaders (CIO and LRC) to understand how ministries collaborate and why projects like Water Wells matter; focused on learning the business reasons behind initiatives and how digital projects support public services.",
-                measureOfSuccess: "Improved understanding of Ontario Government operations; able to explain purpose and impact of LRC-led projects; demonstrated awareness of cross-ministry collaboration and how individual work supports public outcomes.",
-                reflection: "Engaged with CIO and LRC leaders to learn how ministries collaborate and why projects like Water Wells matter; connected day-to-day design to public outcomes.",
+                actionPlan: "Engaged with leaders (CIO and LRC) to understand how ministries collaborate and why projects like Water Wells matter; focused on learning the business reasons behind initiatives and how digital projects support public services. Improved understanding of Ontario Government operations; able to explain purpose and impact of LRC-led projects; demonstrated awareness of cross-ministry collaboration and how individual work supports public outcomes.",
                 image: {
                     alt: "Government service value chain sketch",
                     url: "/co-op/value-chain.png"
@@ -161,7 +151,7 @@ const coopReports = [
             }
         ],
         acknowledgments: [
-            "A Huge Thank You to the Ontario Government team, Claudio; Adeeb Meer; Somas; Aidan; Pushkar; Shaheer Khan; the hackathon team; and the GovTech team for the opportunity to work with you all."
+            "A Huge Thank You to the Ontario Government team, Adeeb Meer; Somas; Aidan; Pushkar; Shaheer Khan for the opportunity to work with you all."
         ]
     }
 ];
@@ -194,7 +184,7 @@ function CoopReportsIndex() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative space-y-14 overflow-hidden",
             style: {
-                padding: "100px 40px 60px"
+                padding: "40px 40px 60px"
             },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -225,7 +215,7 @@ function CoopReportsIndex() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "font-bold text-[52px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] mx-auto fade-up",
+                            className: "font-bold text-[40px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] mx-auto fade-up",
                             style: {
                                 maxWidth: "900px",
                                 animationDelay: "120ms"

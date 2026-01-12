@@ -66,9 +66,9 @@ function Header() {
         return pathname?.startsWith(href);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "w-full flex justify-center px-3 sm:px-4",
+        className: "w-full flex justify-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto mt-3 flex h-[70px] w-full max-w-6xl items-center justify-center rounded-full border border-[#E5E5E5] bg-white px-5 sm:px-8 transition-all duration-250 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_-18px_rgba(0,0,0,0.22)]",
+            className: "mx-auto mt-8 flex h-[70px] w-full max-w-6xl items-center justify-center rounded-full border border-[#E5E5E5] bg-white px-5 sm:p-8 transition-all duration-250 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_-18px_rgba(0,0,0,0.22)]",
             style: {
                 boxShadow: "0 10px 30px -18px rgba(0, 0, 0, 0.18)",
                 backgroundImage: "radial-gradient(120% 120% at 0% 0%, rgba(0,0,0,0.05), transparent 55%), radial-gradient(120% 120% at 100% 100%, rgba(0,0,0,0.05), transparent 55%)"
@@ -119,26 +119,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 function MainLayout({ children, showGithubLink = false }) {
-    const containerClass = "grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 max-w-6xl mx-auto w-full";
-    // #region agent log
-    fetch("http://127.0.0.1:7245/ingest/b442492c-1267-4c57-ba65-11ee44a73000", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            sessionId: "debug-session",
-            runId: "pre-fix",
-            hypothesisId: "H1",
-            location: "components/sections/MainLayout.tsx:13",
-            message: "MainLayout container class",
-            data: {
-                containerClass
-            },
-            timestamp: Date.now()
-        })
-    }).catch(()=>{});
-    // #endregion
+    const containerClass = "grid grid-rows-[10px_1fr_10px] items-center justify-items-center min-h-screen px-4 py-8 pb-20 gap-16 sm:px-8 md:px-12 lg:px-20 max-w-6xl mx-auto w-full";
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const htmlClass = document.documentElement.className;
         const bodyClass = document.body.className;
@@ -149,26 +130,6 @@ function MainLayout({ children, showGithubLink = false }) {
             if (cls && typeof cls.toString === "function") return cls.toString();
             return "";
         }).filter((cls)=>typeof cls === "string" && cls.includes("font-[")).slice(0, 8);
-        // #region agent log
-        fetch("http://127.0.0.1:7245/ingest/b442492c-1267-4c57-ba65-11ee44a73000", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                sessionId: "debug-session",
-                runId: "pre-fix-dom-scan",
-                hypothesisId: "H3",
-                location: "components/sections/MainLayout.tsx:33",
-                message: "DOM class scan for font-[",
-                data: {
-                    htmlClass,
-                    bodyClass,
-                    fontArbitrary
-                },
-                timestamp: Date.now()
-            })
-        }).catch(()=>{});
     // #endregion
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -176,7 +137,7 @@ function MainLayout({ children, showGithubLink = false }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$layout$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/components/sections/MainLayout.tsx",
-                lineNumber: 67,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -184,13 +145,13 @@ function MainLayout({ children, showGithubLink = false }) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/components/sections/MainLayout.tsx",
-                lineNumber: 68,
+                lineNumber: 41,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/MainLayout.tsx",
-        lineNumber: 66,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }

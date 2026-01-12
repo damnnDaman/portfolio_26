@@ -59,9 +59,9 @@ __turbopack_context__.s([
 const coopReports = [
     {
         slug: "ontario-gov-ux-coop",
-        title: "UI/UX Designer & Product Manager Co-op",
+        title: "UI/UX Designer & Product Manager",
         term: "Fall 2025 Work Term",
-        role: "UI/UX Designer & Product Manager Co-op",
+        role: "UI/UX Designer & Product Manager",
         employer: "Ontario Government (Ontario Public Service)",
         location: "Ontario, Canada (hybrid)",
         coverImage: "/experience/ontario.png",
@@ -79,7 +79,7 @@ const coopReports = [
             "Product Thinking"
         ],
         employerInfo: {
-            about: "Digital Branch Solutions (Land & Resources Cluster) modernizes Ontario’s Water Well program: tagging every well in the province, maintaining end-to-end records, and streamlining licensing for technicians, contractors, and managers—built on Salesforce CRM for compliant, reliable public services.",
+            about: "Digital Solutions Branch (Land & Resources Cluster) modernizes Ontario’s Water Well program: tagging every well in the province, maintaining end-to-end records, and streamlining licensing for technicians, contractors, and managers—built on Salesforce CRM for compliant, reliable public services.",
             image: {
                 alt: "Ontario Government digital services",
                 url: "/experience/ontario.png"
@@ -111,9 +111,7 @@ const coopReports = [
         goalDetails: [
             {
                 title: "Strengthen Figma and user-centered design",
-                actionPlan: "Worked closely with the UX Lead to strengthen Figma and user-centered design through hands-on learning; built an end-to-end Ontario Job Portal prototype and refined designs weekly with feedback, focusing on accessibility, usability, and consistent patterns.",
-                measureOfSuccess: "Completed a full interactive Figma prototype; incorporated weekly UX Lead feedback; demonstrated improved usability, accessibility, and confidence in design decisions.",
-                reflection: "Worked closely with the UX Lead to build an end-to-end Ontario Job Portal prototype in Figma; iterated weekly using accessibility, usability, and consistent design patterns to align with user-centered principles.",
+                actionPlan: "Worked closely with the UX Lead to strengthen Figma and user-centered design through hands-on learning; built an end-to-end Ontario Job Portal prototype and refined designs weekly with feedback, focusing on accessibility, usability, and consistent patterns. Completed a full interactive Figma prototype; incorporated weekly UX Lead feedback; demonstrated improved usability, accessibility, and confidence in design decisions.",
                 image: {
                     alt: "Figma user-centered design exploration",
                     url: "/co-op/figma.png"
@@ -121,9 +119,7 @@ const coopReports = [
             },
             {
                 title: "Contribute to Water Wells Modernization & grow product sense",
-                actionPlan: "Supported the Water Wells Modernization Project by assisting with wireframes, workflows, and user journeys; learned how Salesforce CRM supports efficient data management; applied communication and teamwork skills with cross-functional teams.",
-                measureOfSuccess: "Contributed wireframes and workflow documentation; gained practical Salesforce CRM knowledge; demonstrated understanding of stakeholder and user needs and applied product thinking.",
-                reflection: "Supported Water Wells Modernization with wireframes, workflows, and user journeys; learned how Salesforce CRM supports technicians/contractors and practiced balancing user needs, system limits, and business goals.",
+                actionPlan: "Supported the Water Wells Modernization Project by assisting with wireframes, workflows, and user journeys; learned how Salesforce CRM supports efficient data management; applied communication and teamwork skills with cross-functional teams. Contributed wireframes and workflow documentation; gained practical Salesforce CRM knowledge; demonstrated understanding of stakeholder and user needs and applied product thinking.",
                 image: {
                     alt: "Water Wells modernization flow",
                     url: "/co-op/salesforce.png"
@@ -131,9 +127,7 @@ const coopReports = [
             },
             {
                 title: "Build patience, resilience, and workplace comfort",
-                actionPlan: "Adapted to Canadian workplace culture by improving professional communication and consistency; attended networking events and volunteered as a GovTech Student Champion hosting events, collaborating with students, and creating videos.",
-                measureOfSuccess: "Increased engagement in workplace and networking events; improved punctuality and consistency; successfully contributed to GovTech initiatives; greater confidence with colleagues and managers.",
-                reflection: "Adapted to Canadian workplace norms through professional communication, punctuality, and consistency; attended networking events and volunteered as a GovTech Student Champion hosting events and creating videos.",
+                actionPlan: "Adapted to Canadian workplace culture by improving professional communication and consistency; attended networking events and volunteered as a GovTech Student Champion hosting events, collaborating with students, and creating videos. Increased engagement in workplace and networking events; improved punctuality and consistency; successfully contributed to GovTech initiatives; greater confidence with colleagues and managers.",
                 image: {
                     alt: "Team collaboration moment",
                     url: "/co-op/sitting-on-chair.jpeg"
@@ -141,9 +135,7 @@ const coopReports = [
             },
             {
                 title: "Improve public speaking and confidence",
-                actionPlan: "Actively participated more during meetings, updates, and daily conversations; used GovTech activities and student engagement events to practice public speaking; focused on improving clarity and confidence.",
-                measureOfSuccess: "Increased verbal participation in meetings; improved confidence sharing ideas and updates; positive feedback from peers and supervisors; reduced hesitation speaking in groups.",
-                reflection: "Actively spoke up in meetings, updates, and GovTech events to practice clarity and confidence; used supportive settings to build comfort communicating with coworkers.",
+                actionPlan: "Actively participated more during meetings, updates, and daily conversations; used GovTech activities and student engagement events to practice public speaking; focused on improving clarity and confidence. Increased verbal participation in meetings; improved confidence sharing ideas and updates; positive feedback from peers and supervisors; reduced hesitation speaking in groups.",
                 image: {
                     alt: "Team presentation snapshot",
                     url: "/co-op/team.jpeg"
@@ -151,9 +143,7 @@ const coopReports = [
             },
             {
                 title: "Understand government operations and project purpose",
-                actionPlan: "Engaged with leaders (CIO and LRC) to understand how ministries collaborate and why projects like Water Wells matter; focused on learning the business reasons behind initiatives and how digital projects support public services.",
-                measureOfSuccess: "Improved understanding of Ontario Government operations; able to explain purpose and impact of LRC-led projects; demonstrated awareness of cross-ministry collaboration and how individual work supports public outcomes.",
-                reflection: "Engaged with CIO and LRC leaders to learn how ministries collaborate and why projects like Water Wells matter; connected day-to-day design to public outcomes.",
+                actionPlan: "Engaged with leaders (CIO and LRC) to understand how ministries collaborate and why projects like Water Wells matter; focused on learning the business reasons behind initiatives and how digital projects support public services. Improved understanding of Ontario Government operations; able to explain purpose and impact of LRC-led projects; demonstrated awareness of cross-ministry collaboration and how individual work supports public outcomes.",
                 image: {
                     alt: "Government service value chain sketch",
                     url: "/co-op/value-chain.png"
@@ -161,7 +151,7 @@ const coopReports = [
             }
         ],
         acknowledgments: [
-            "A Huge Thank You to the Ontario Government team, Claudio; Adeeb Meer; Somas; Aidan; Pushkar; Shaheer Khan; the hackathon team; and the GovTech team for the opportunity to work with you all."
+            "A Huge Thank You to the Ontario Government team, Adeeb Meer; Somas; Aidan; Pushkar; Shaheer Khan for the opportunity to work with you all."
         ]
     }
 ];
@@ -227,7 +217,7 @@ async function CoopReportDetail({ params }) {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
             className: "space-y-10 px-5 md:px-10",
             style: {
-                paddingTop: "100px",
+                paddingTop: "40px",
                 paddingBottom: "60px",
                 backgroundColor: "#FAFAFA"
             },
@@ -237,209 +227,27 @@ async function CoopReportDetail({ params }) {
                     style: {
                         marginBottom: "32px"
                     },
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "inline-block uppercase",
-                            style: {
-                                background: "#1A1A1A",
-                                color: "#FFFFFF",
-                                padding: "8px 16px",
-                                borderRadius: "6px",
-                                fontSize: "13px",
-                                fontWeight: 600,
-                                letterSpacing: "0.5px",
-                                marginBottom: "24px"
-                            },
-                            children: badgeText
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 64,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-center",
-                            children: report.coverImage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                src: report.coverImage,
-                                alt: report.employer,
-                                width: 140,
-                                height: 80,
-                                style: {
-                                    height: "80px",
-                                    width: "auto",
-                                    marginBottom: "24px",
-                                    filter: "grayscale(0)"
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                lineNumber: 81,
-                                columnNumber: 15
-                            }, this) : null
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 79,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "font-bold",
-                            style: {
-                                fontSize: "48px",
-                                fontWeight: 700,
-                                color: "#1A1A1A",
-                                lineHeight: 1.2,
-                                marginBottom: "16px"
-                            },
-                            children: report.title
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 90,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 60,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                    className: "fade-up",
-                    style: {
-                        background: "#FFFFFF",
-                        border: "1px solid #E5E5E5",
-                        borderRadius: "16px",
-                        boxShadow: "0 8px 32px rgba(0, 0, 0, 0.08)",
-                        padding: "32px",
-                        maxWidth: "900px",
-                        margin: "-40px auto 60px"
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 md:grid-cols-3 gap-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        style: {
-                                            fontSize: "13px",
-                                            color: "#8A8A8A",
-                                            textTransform: "uppercase",
-                                            letterSpacing: "0.5px",
-                                            fontWeight: 600
-                                        },
-                                        children: "Role"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 121,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        style: {
-                                            fontSize: "16px",
-                                            color: "#1A1A1A",
-                                            fontWeight: 500
-                                        },
-                                        children: report.role
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 132,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                lineNumber: 120,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        style: {
-                                            fontSize: "13px",
-                                            color: "#8A8A8A",
-                                            textTransform: "uppercase",
-                                            letterSpacing: "0.5px",
-                                            fontWeight: 600
-                                        },
-                                        children: "Skills"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 135,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-wrap",
-                                        style: {
-                                            gap: "8px"
-                                        },
-                                        children: (report.skills || []).slice(0, 6).map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                style: {
-                                                    background: "#F5F5F5",
-                                                    padding: "4px 10px",
-                                                    borderRadius: "6px",
-                                                    fontSize: "13px",
-                                                    color: "#1A1A1A"
-                                                },
-                                                children: skill
-                                            }, skill, false, {
-                                                fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                lineNumber: 148,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 146,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                lineNumber: 134,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        style: {
-                                            fontSize: "13px",
-                                            color: "#8A8A8A",
-                                            textTransform: "uppercase",
-                                            letterSpacing: "0.5px",
-                                            fontWeight: 600
-                                        },
-                                        children: "Duration"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 164,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        style: {
-                                            fontSize: "16px",
-                                            color: "#1A1A1A",
-                                            fontWeight: 500
-                                        },
-                                        children: report.term
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 175,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                lineNumber: 163,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "inline-block uppercase animate-float-pulse",
+                        style: {
+                            background: "#1A1A1A",
+                            color: "#FFFFFF",
+                            padding: "8px 16px",
+                            borderRadius: "6px",
+                            fontSize: "13px",
+                            fontWeight: 600,
+                            letterSpacing: "0.5px",
+                            marginBottom: "24px"
+                        },
+                        children: badgeText
+                    }, void 0, false, {
                         fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                        lineNumber: 119,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 107,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this),
                 report.employerInfo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -463,7 +271,7 @@ async function CoopReportDetail({ params }) {
                                             children: "Employer"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 186,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -476,13 +284,13 @@ async function CoopReportDetail({ params }) {
                                             children: "What they do"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 102,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 89,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -494,13 +302,13 @@ async function CoopReportDetail({ params }) {
                                     children: "Mission, scope, and impact."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 209,
+                                    lineNumber: 113,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 184,
+                            lineNumber: 88,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -515,7 +323,7 @@ async function CoopReportDetail({ params }) {
                                     children: report.employerInfo.about
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 214,
+                                    lineNumber: 118,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -529,31 +337,31 @@ async function CoopReportDetail({ params }) {
                                         sizes: "(min-width: 768px) 560px, 100vw"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 219,
+                                        lineNumber: 123,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "aspect-video w-full flex items-center justify-center text-gray-500 text-sm",
                                         children: "Add employer image"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 132,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 121,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 213,
+                            lineNumber: 117,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 183,
+                    lineNumber: 87,
                     columnNumber: 11
                 }, this),
                 report.jobDescription && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -572,7 +380,7 @@ async function CoopReportDetail({ params }) {
                             children: "Role & scope"
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 239,
+                            lineNumber: 143,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -585,7 +393,7 @@ async function CoopReportDetail({ params }) {
                             children: "Job description"
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 251,
+                            lineNumber: 155,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -597,13 +405,13 @@ async function CoopReportDetail({ params }) {
                             children: report.jobDescription
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 261,
+                            lineNumber: 165,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 238,
+                    lineNumber: 142,
                     columnNumber: 11
                 }, this),
                 report.images && report.images.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -626,7 +434,7 @@ async function CoopReportDetail({ params }) {
                                         children: "Gallery"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 271,
+                                        lineNumber: 175,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -639,18 +447,18 @@ async function CoopReportDetail({ params }) {
                                         children: "Highlights in pictures"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                        lineNumber: 283,
+                                        lineNumber: 187,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                lineNumber: 270,
+                                lineNumber: 174,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 269,
+                            lineNumber: 173,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -678,7 +486,7 @@ async function CoopReportDetail({ params }) {
                                                 sizes: "(min-width: 1024px) 400px, (min-width: 768px) 360px, 100vw"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                lineNumber: 309,
+                                                lineNumber: 213,
                                                 columnNumber: 23
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "h-64 w-full flex items-center justify-center text-gray-500 text-sm",
@@ -688,12 +496,12 @@ async function CoopReportDetail({ params }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                lineNumber: 317,
+                                                lineNumber: 221,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 307,
+                                            lineNumber: 211,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
@@ -707,24 +515,24 @@ async function CoopReportDetail({ params }) {
                                             children: img.alt
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 322,
+                                            lineNumber: 226,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, img.alt, true, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 297,
+                                    lineNumber: 201,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 295,
+                            lineNumber: 199,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 268,
+                    lineNumber: 172,
                     columnNumber: 11
                 }, this),
                 report.goalDetails && report.goalDetails.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -735,39 +543,22 @@ async function CoopReportDetail({ params }) {
                             className: "flex items-start justify-between gap-4 flex-wrap",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            style: {
-                                                fontSize: "12px",
-                                                color: "#8A8A8A",
-                                                textTransform: "uppercase",
-                                                letterSpacing: "1px",
-                                                fontWeight: 600,
-                                                marginBottom: "12px"
-                                            },
-                                            children: "Goal deep dives"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 343,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            style: {
-                                                fontSize: "28px",
-                                                fontWeight: 700,
-                                                color: "#1A1A1A",
-                                                marginBottom: "8px"
-                                            },
-                                            children: "Action, success, reflection, conclusion"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 355,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        style: {
+                                            fontSize: "28px",
+                                            fontWeight: 700,
+                                            color: "#1A1A1A",
+                                            marginBottom: "8px"
+                                        },
+                                        children: "Goal deep dives"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
+                                        lineNumber: 248,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 342,
+                                    lineNumber: 246,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -779,13 +570,13 @@ async function CoopReportDetail({ params }) {
                                     children: "Pull structured goals..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 366,
+                                    lineNumber: 259,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 341,
+                            lineNumber: 245,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -817,7 +608,7 @@ async function CoopReportDetail({ params }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                    lineNumber: 384,
+                                                    lineNumber: 277,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -829,13 +620,13 @@ async function CoopReportDetail({ params }) {
                                                     children: goal.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                    lineNumber: 395,
+                                                    lineNumber: 288,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 383,
+                                            lineNumber: 276,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -845,64 +636,18 @@ async function CoopReportDetail({ params }) {
                                                 lineHeight: 1.8,
                                                 fontSize: "16px"
                                             },
-                                            children: [
-                                                goal.actionPlan && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "font-semibold text-heading",
-                                                            children: "Action Plan"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                            lineNumber: 402,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            children: goal.actionPlan
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                            lineNumber: 403,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true),
-                                                goal.measureOfSuccess && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "font-semibold text-heading",
-                                                            children: "Measure of Success"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                            lineNumber: 408,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            children: goal.measureOfSuccess
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                            lineNumber: 409,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "font-semibold text-heading",
-                                                    children: "Reflection"
+                                            children: goal.actionPlan && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    children: goal.actionPlan
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                    lineNumber: 412,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: goal.reflection
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                    lineNumber: 413,
-                                                    columnNumber: 21
+                                                    lineNumber: 296,
+                                                    columnNumber: 25
                                                 }, this)
-                                            ]
-                                        }, void 0, true, {
+                                            }, void 0, false)
+                                        }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 399,
+                                            lineNumber: 292,
                                             columnNumber: 19
                                         }, this),
                                         goal.image?.url && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -921,29 +666,29 @@ async function CoopReportDetail({ params }) {
                                                 sizes: "(min-width: 768px) 420px, 90vw"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                                lineNumber: 424,
+                                                lineNumber: 310,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 416,
+                                            lineNumber: 302,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, goal.title, true, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 372,
+                                    lineNumber: 265,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 370,
+                            lineNumber: 263,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 340,
+                    lineNumber: 244,
                     columnNumber: 11
                 }, this),
                 combinedHighlights.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -967,7 +712,7 @@ async function CoopReportDetail({ params }) {
                                             children: "Impact highlights & conclusions"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 444,
+                                            lineNumber: 330,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -980,13 +725,13 @@ async function CoopReportDetail({ params }) {
                                             children: "What I built, shipped, and concluded"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 456,
+                                            lineNumber: 342,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 443,
+                                    lineNumber: 329,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -998,13 +743,13 @@ async function CoopReportDetail({ params }) {
                                     children: "Problem → Solution → Outcome."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 467,
+                                    lineNumber: 353,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 442,
+                            lineNumber: 328,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1018,18 +763,18 @@ async function CoopReportDetail({ params }) {
                                     children: item
                                 }, item, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 473,
+                                    lineNumber: 359,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 471,
+                            lineNumber: 357,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 441,
+                    lineNumber: 327,
                     columnNumber: 11
                 }, this),
                 report.takeaways && report.takeaways.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1053,7 +798,7 @@ async function CoopReportDetail({ params }) {
                                             children: "Reflections"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 489,
+                                            lineNumber: 375,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1066,13 +811,13 @@ async function CoopReportDetail({ params }) {
                                             children: "What I learned"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                            lineNumber: 501,
+                                            lineNumber: 387,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 488,
+                                    lineNumber: 374,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1084,13 +829,13 @@ async function CoopReportDetail({ params }) {
                                     children: "Specific, honest, concise."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 512,
+                                    lineNumber: 398,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 487,
+                            lineNumber: 373,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1099,18 +844,18 @@ async function CoopReportDetail({ params }) {
                                     children: item
                                 }, item, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 518,
+                                    lineNumber: 404,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 516,
+                            lineNumber: 402,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 486,
+                    lineNumber: 372,
                     columnNumber: 11
                 }, this),
                 report.acknowledgments && report.acknowledgments.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1129,7 +874,7 @@ async function CoopReportDetail({ params }) {
                             children: "Acknowledgments"
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 526,
+                            lineNumber: 412,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1142,7 +887,7 @@ async function CoopReportDetail({ params }) {
                             children: "Thanks and credits"
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 538,
+                            lineNumber: 424,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1151,18 +896,18 @@ async function CoopReportDetail({ params }) {
                                     children: item
                                 }, item, false, {
                                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                                    lineNumber: 550,
+                                    lineNumber: 436,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                            lineNumber: 548,
+                            lineNumber: 434,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/coop-reports/[slug]/page.tsx",
-                    lineNumber: 525,
+                    lineNumber: 411,
                     columnNumber: 11
                 }, this)
             ]

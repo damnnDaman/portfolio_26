@@ -30,34 +30,34 @@ const musicFavorites = [
   {
     title: "Farebi",
     artist: "Chaar Diwaari, Raftaar",
-    link: "https://open.spotify.com/track/1Jsos1mzwTwYGOndYN5h8V?si=fbc946326ea543d9",
+    embedLink: "https://open.spotify.com/embed/track/1Jsos1mzwTwYGOndYN5h8V?si=fbc946326ea543d9",
     tag: "Hip Hop",
   },
   {
     title: "Tune Maari Entriyaan",
     artist: "Various Artists",
-    link: "https://open.spotify.com/track/5kg1GacbhgQfLcbgOBRO9c?si=06e2252b3da946aa",
+    embedLink: "https://open.spotify.com/embed/track/5kg1GacbhgQfLcbgOBRO9c?si=06e2252b3da946aa",
     tag: "Bollywood Electronic",
   },
   {
     title: "In my feelings",
     artist: "Drake",
-    link: "https://open.spotify.com/track/2G7V7zsVDxg1yRsu7Ew9RJ?si=a762c89547c04c1f",
+    embedLink: "https://open.spotify.com/embed/track/2G7V7zsVDxg1yRsu7Ew9RJ?si=a762c89547c04c1f",
     tag: "Rap",
   },
   {
     title: "Rakhlo Tum chupaake",
     artist: "Arpit Bala",
-    link: "https://open.spotify.com/track/5nXmr6ypbTYjhLR3lXSPyc?si=18110693c81a4d1b",
+    embedLink: "https://open.spotify.com/embed/track/5nXmr6ypbTYjhLR3lXSPyc?si=18110693c81a4d1b",
     tag: "Indie Pop",
   },
   {
     title: "Pink + White",
     artist: "Frank Ocean",
-    link: "https://open.spotify.com/track/6WS1cUwxPdtAGaxK9YyQZe",
+    embedLink: "https://open.spotify.com/embed/track/1Jsos1mzwTwYGOndYN5h8V",
     tag: "R&B",
   },
- 
+
 ];
 
 const hobbies = [
@@ -185,49 +185,16 @@ export default function About() {
           </div>
           <div className="grid gap-5 md:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {musicFavorites.map((track) => (
-              <div
-                key={track.title}
-                className="group rounded-[12px] border border-[#E5E5E5] bg-white p-5 shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_26px_-16px_rgba(0,0,0,0.18)]"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="relative h-20 w-20 overflow-hidden rounded-[10px] bg-[#F3F4F6] flex items-center justify-center">
-                    <span
-                      className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1DB954] shadow-[0_6px_16px_-10px_rgba(0,0,0,0.45)]"
-                      aria-hidden="true"
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-white"
-                      >
-                        <path
-                          d="M18.5 9.9c-3.3-2-8.7-2.2-11.8-1.2a.7.7 0 0 0 .45 1.33c2.7-.91 7.6-.75 10.4.94a.7.7 0 0 0 .94-.25.7.7 0 0 0-.25-.94Zm-.4 2.64c-.27-.17-4.5-2.6-9.6-1.2a.6.6 0 1 0 .32 1.15c4.5-1.3 8.5.93 8.54.95a.6.6 0 0 0 .73-.96Zm-1 2.59c-.22-.14-3.6-2.16-7.3-1a.5.5 0 0 0 .28.96c3.3-.96 6.4.87 6.43.89a.5.5 0 0 0 .57-.85Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-[16px] font-semibold text-[#1A1A1A] truncate">{track.title}</p>
-                    <p className="text-[14px] text-[#4A4A4A] truncate">{track.artist}</p>
-                    {track.tag && (
-                      <span className="mt-2 inline-flex rounded-full bg-[#F8FAFC] px-3 py-1 text-[12px] font-semibold text-[#4A4A4A] border border-[#E5E5E5]">
-                        {track.tag}
-                      </span>
-                    )}
-                  </div>
-                </div>
-                {track.link && (
-                  <a
-                    href={track.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-[#1A1A1A] transition-colors duration-150 hover:text-black"
-                  >
-                    ▶ Play on Spotify
-                  </a>
-                )}
+              <div key={track.title} className="rounded-xl overflow-hidden">
+                <iframe
+                  src={track.embedLink}
+                  width="100%"
+                  height="152"
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="rounded-xl"
+                />
               </div>
             ))}
           </div>

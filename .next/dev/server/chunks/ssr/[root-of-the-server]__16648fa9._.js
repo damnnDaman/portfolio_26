@@ -226,11 +226,11 @@ const technicalWorkExperiences = [
     {
         title: "UI/UX Designer",
         duration: "Sep 2025 - April 2026",
-        company: "Ontario Government",
+        company: "Government of Ontario",
         description: "Designed and implemented user-friendly interfaces for web applications, ensuring seamless user experiences and intuitive navigation while adhering to the Ontario Government design system and UX guidelines.",
         image: "/experience/ontario.png",
         skills: [
-            "UX/UI Design",
+            "UI/UX Design",
             "Prototyping",
             "User Research",
             "Figma"
@@ -239,7 +239,7 @@ const technicalWorkExperiences = [
     {
         title: "Product Manager",
         duration: "Sep 2025 - April 2026",
-        company: "Ontario Government",
+        company: "Government of Ontario",
         description: "Managed and coordinated the development of a new web application for the Ontario Government, ensuring timely delivery and adherence to project timelines by keeping good communication with the team and stakeholders.",
         image: "/experience/ontario.png",
         skills: [
@@ -249,7 +249,7 @@ const technicalWorkExperiences = [
             "Team Collaboration",
             "Documentation",
             "Power BI",
-            "DevOps",
+            "Azure DevOps",
             "Salesforce"
         ]
     },
@@ -260,11 +260,11 @@ const technicalWorkExperiences = [
         description: "Building and managing a full-stack travel booking website for a small travel agency to support business growth and expand customer reach, enabling efficient booking and customer management while integrating flight and hotel APIs to surface the most cost-effective travel options in real time.",
         image: "/experience/aylps.jpeg",
         skills: [
+            "Full Stack Development",
             "Next.js",
             "Tailwind CSS",
             "TypeScript",
-            "API Integration",
-            "Full Stack Development"
+            "API Integration"
         ],
         showCoopReportsLink: false
     },
@@ -275,6 +275,7 @@ const technicalWorkExperiences = [
         description: "Mentored 500+ students. Built Autograder (C + Unity) and increased the efficiency by 70% and reduced the time taken to grade assignments by 50%. Led Weekly labs to help students understand the concepts and applications of C programming.",
         image: "/experience/Uog.png",
         skills: [
+            "Testing Automation",
             "C",
             "Autograder",
             "Mentorship",
@@ -386,7 +387,7 @@ function Experience() {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative space-y-14 overflow-hidden",
             style: {
-                padding: "100px 40px 60px"
+                padding: "40px 40px 60px"
             },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -417,7 +418,7 @@ function Experience() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "font-bold text-[52px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] mx-auto fade-up",
+                            className: "font-bold text-[40px] leading-[1.2] tracking-[-1px] text-[#1A1A1A] mx-auto fade-up",
                             style: {
                                 maxWidth: "900px",
                                 animationDelay: "120ms"
@@ -433,7 +434,7 @@ function Experience() {
                             style: {
                                 maxWidth: "700px"
                             },
-                            children: "Technical roles, leadership, and extracurricular builds—kept consistent with the same polish and velocity as my projects."
+                            children: "Technical roles, leadership, and extracurricular builds - kept consistent with the same polish and velocity as my projects."
                         }, void 0, false, {
                             fileName: "[project]/src/app/experience/page.tsx",
                             lineNumber: 27,
