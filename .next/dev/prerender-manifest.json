@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/coop-reports/ontario-gov-ux-coop":{}},"dynamicRoutes":{"/coop-reports/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/coop-reports/[slug]","routeRegex":"^\\/coop\\-reports\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"094e65a2fb9453f56fbc9b52cef25492","previewModeSigningKey":"75996db4782385f2e07090b25bc6a2a970dbc7f8b3f8af542fcc76383e211b88","previewModeEncryptionKey":"b9316bc7923112d34324aa220b70f9e0f568ee9278b62e996ce6b262a7512748"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "968972ae78262e91eb49fcd352153116",
+    "previewModeSigningKey": "e79fb41666c87512b24b1735fd49abe84350b9955f27b28359d1ff19f7bf02e8",
+    "previewModeEncryptionKey": "6c79c6d66a857ed53faf399f877ea75d1533471f6bcc7f338313578d43c88eda"
+  }
+}

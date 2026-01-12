@@ -247,40 +247,20 @@ export default function About() {
             Want to share feedback or ideas anonymously? Use the quick form below - no sign-in needed.
           </p>
           {/* Hidden static form so Netlify detects this form and captures submissions */}
+
           <form
-            name="contact"
-            data-netlify="true"
-            method="POST"
-            netlify-honeypot="bot-field"
-            hidden
-            aria-hidden="true"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <input name="bot-field" />
-            <input name="name" />
-            <input name="email" />
-            <textarea name="message" />
-          </form>
-          <form
-            name="contact"
-            method="POST"
-            action="/about?form=success"
-            data-netlify="true"
-            // netlify-honeypot="bot-field"
-            className="space-y-4"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p className="hidden">
-              <label>
-                Don’t fill this out if you&apos;re human: <input name="bot-field" />
-              </label>
-            </p>
+            name="contact" data-netlify="true">
+
+            {/* Required hidden input for Netlify */}
+            {/* <input type="hidden" name="name" value="contact" /> */}
+
             <label className="flex flex-col gap-2 text-sm font-semibold text-[#1A1A1A]">
               Message
               <textarea
                 name="message"
                 rows={4}
                 className="rounded-[10px] border border-[#E5E5E5] bg-white px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-[#1A1A1A]/20"
+                required
               />
             </label>
             <button

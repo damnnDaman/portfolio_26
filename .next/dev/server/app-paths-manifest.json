@@ -1,7 +1,5 @@
 {
   "/about/page": "app/about/page.js",
-  "/coop-reports/[slug]/page": "app/coop-reports/[slug]/page.js",
-  "/coop-reports/page": "app/coop-reports/page.js",
   "/experience/page": "app/experience/page.js",
   "/page": "app/page.js",
   "/projects/page": "app/projects/page.js"
